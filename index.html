@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江门广源工程材料有限公司 - 专业建材供应商</title>
+    <meta name="description" content="江门广源工程材料有限公司，专业从事建筑材料、工程物资供应，提供优质钢材、水泥、管材等工程材料。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部通知栏 -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span><i class="fas fa-phone"></i> 0750-8888888</span>
+                <span><i class="fas fa-envelope"></i> info@gywsgc.com</span>
+                <span><i class="fas fa-map-marker-alt"></i> 广东省江门市蓬江区</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+                <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
+                <a href="#" aria-label="抖音"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>广源工程材料</h1>
+                    <span>GUANGYUAN ENGINEERING</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary btn-quote">获取报价</a>
+                <button class="hamburger" id="hamburger" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero 轮播区 -->
+    <section class="hero-slider" id="heroSlider">
+        <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1920/800?random=1');">
+            <div class="container slide-content">
+                <span class="slide-tag">专业建材供应商</span>
+                <h2>优质工程材料<br>助力城市建设</h2>
+                <p>专注钢材、水泥、管材等建筑材料供应20年，服务超过500个工程项目</p>
+                <div class="slide-buttons">
+                    <a href="products.html" class="btn btn-primary">查看产品</a>
+                    <a href="contact.html" class="btn btn-outline">联系我们</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1920/800?random=2');">
+            <div class="container slide-content">
+                <span class="slide-tag">一站式采购服务</span>
+                <h2>全品类工程材料<br>一站式供应解决方案</h2>
+                <p>从原材料到成品，从采购到配送，为您提供全方位的材料供应服务</p>
+                <div class="slide-buttons">
+                    <a href="products.html" class="btn btn-primary">了解详情</a>
+                    <a href="about.html" class="btn btn-outline">公司介绍</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1920/800?random=3');">
+            <div class="container slide-content">
+                <span class="slide-tag">品质保证</span>
+                <h2>严格质量把控<br>铸就精品工程</h2>
+                <p>所有产品均通过国家质量检测认证，与多家知名品牌建立长期合作</p>
+                <div class="slide-buttons">
+                    <a href="products.html" class="btn btn-primary">品质产品</a>
+                    <a href="contact.html" class="btn btn-outline">咨询合作</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots" id="sliderDots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+        <button class="slider-arrow prev" id="prevSlide" aria-label="上一张"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-arrow next" id="nextSlide" aria-label="下一张"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- 核心优势 -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-medal"></i></div>
+                    <h3>品质保证</h3>
+                    <p>所有产品均通过ISO9001质量认证，厂家直供，质量可追溯</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-truck-fast"></i></div>
+                    <h3>快速配送</h3>
+                    <p>自有物流车队，覆盖珠三角地区，24小时内送达施工现场</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>诚信经营</h3>
+                    <p>20年行业经验，500+合作客户，口碑见证实力</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>专业服务</h3>
+                    <p>专业技术团队提供选材建议，售后无忧，全程跟进</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们简介 -->
+    <section class="about-preview">
+        <div class="container about-preview-grid">
+            <div class="about-preview-image">
+                <img src="https://picsum.photos/600/500?random=4" alt="公司简介" loading="lazy">
+                <div class="experience-badge">
+                    <span class="number">20</span>
+                    <span class="label">年行业经验</span>
+                </div>
+            </div>
+            <div class="about-preview-content">
+                <span class="section-tag">关于我们</span>
+                <h2>江门广源工程材料有限公司</h2>
+                <p class="about-desc">公司成立于2005年，位于广东省江门市，是一家专业从事建筑材料、工程物资供应与配送的综合性企业。主营产品涵盖钢材、水泥、管材、防水材料、装饰材料等多个品类。</p>
+                <ul class="about-list">
+                    <li><i class="fas fa-check-circle"></i> 年销售额突破2亿元</li>
+                    <li><i class="fas fa-check-circle"></i> 仓储面积超10000㎡</li>
+                    <li><i class="fas fa-check-circle"></i> 与30+知名品牌建立合作</li>
+                    <li><i class="fas fa-check-circle"></i> 服务覆盖珠三角及周边地区</li>
+                </ul>
+                <a href="about.html" class="btn btn-primary">了解更多</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品分类展示 -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">产品中心</span>
+                <h2>主营产品分类</h2>
+                <p>全品类工程材料，满足您的一站式采购需求</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/400/300?random=5" alt="钢材类" loading="lazy">
+                        <span class="product-badge">热销</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>钢材类</h3>
+                        <p>螺纹钢、线材、型钢、钢板等</p>
+                        <a href="products.html" class="product-link">查看详情 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/400/300?random=6" alt="水泥类" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>水泥类</h3>
+                        <p>普通硅酸盐水泥、特种水泥等</p>
+                        <a href="products.html" class="product-link">查看详情 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/400/300?random=7" alt="管材类" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>管材类</h3>
+                        <p>PVC管、PE管、钢管、铸铁管等</p>
+                        <a href="products.html" class="product-link">查看详情 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/400/300?random=8" alt="防水材料" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>防水材料</h3>
+                        <p>防水卷材、防水涂料、密封材料等</p>
+                        <a href="products.html" class="product-link">查看详情 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据统计 -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <span class="stat-number" data-count="20">0</span>
+                <span class="stat-label">年经验</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="500">0</span>
+                <span class="stat-label">合作客户</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="10000">0</span>
+                <span class="stat-label">仓储面积(㎡)</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="30">0</span>
+                <span class="stat-label">合作品牌</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作伙伴/品牌展示 -->
+    <section class="brands">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">合作品牌</span>
+                <h2>携手知名品牌 共赢未来</h2>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-item"><i class="fas fa-industry"></i> 韶钢</div>
+                <div class="brand-item"><i class="fas fa-industry"></i> 海螺水泥</div>
+                <div class="brand-item"><i class="fas fa-industry"></i> 联塑管道</div>
+                <div class="brand-item"><i class="fas fa-industry"></i> 科顺防水</div>
+                <div class="brand-item"><i class="fas fa-industry"></i> 宝武钢铁</div>
+                <div class="brand-item"><i class="fas fa-industry"></i> 华润水泥</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新闻动态 -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">新闻动态</span>
+                <h2>公司最新资讯</h2>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="day">15</span>
+                        <span class="month">2024.06</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>公司成功中标江门市重点项目材料供应</h3>
+                        <p>近日，我司成功中标江门市某大型市政工程项目材料供应标段...</p>
+                        <a href="#">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="day">28</span>
+                        <span class="month">2024.05</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>公司荣获"2024年度优秀供应商"称号</h3>
+                        <p>凭借优质的产品和专业的服务，我司荣获行业"优秀供应商"称号...</p>
+                        <a href="#">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="day">10</span>
+                        <span class="month">2024.04</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>公司仓储中心扩建工程正式启动</h3>
+                        <p>为满足日益增长的业务需求，公司仓储中心扩建工程正式启动...</p>
+                        <a href="#">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 CTA -->
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2>需要采购工程材料？</h2>
+            <p>立即联系我们，获取专业报价和采购建议</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-light">立即咨询</a>
+                <a href="tel:07508888888" class="btn btn-outline-light"><i class="fas fa-phone"></i> 0750-8888888</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <div class="footer-logo">
+                    <i class="fas fa-building"></i>
+                    <span>广源工程材料</span>
+                </div>
+                <p>江门广源工程材料有限公司是一家专业从事建筑材料、工程物资供应与配送的综合性企业，致力于为客户提供优质的产品和专业的服务。</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+                    <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
+                    <a href="#" aria-label="抖音"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="QQ"><i class="fab fa-qq"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>快速导航</h3>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>产品分类</h3>
+                <ul>
+                    <li><a href="products.html">钢材类</a></li>
+                    <li><a href="products.html">水泥类</a></li>
+                    <li><a href="products.html">管材类</a></li>
+                    <li><a href="products.html">防水材料</a></li>
+                    <li><a href="products.html">装饰材料</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact">
+                <h3>联系我们</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 广东省江门市蓬江区建设路88号</li>
+                    <li><i class="fas fa-phone"></i> 0750-8888888</li>
+                    <li><i class="fas fa-mobile-alt"></i> 138-8888-8888</li>
+                    <li><i class="fas fa-envelope"></i> info@gywsgc.com</li>
+                    <li><i class="fas fa-clock"></i> 周一至周六 8:00-18:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2024 江门广源工程材料有限公司 版权所有</p>
+                <p><a href="#">粤ICP备XXXXXXXX号</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部 -->
+    <button class="back-to-top" id="backToTop" aria-label="返回顶部">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
