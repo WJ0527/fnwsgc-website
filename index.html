@@ -1,35 +1,37 @@
+
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<html lang="zh-CN" data-editor-mutation-bound="true"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>阔农 - 专业农业科技服务</title>
-    <meta name="description" content="阔农 - 专业农业科技服务，提供优质农产品及农业解决方案。联系电话：15298311630">
+    <title>新疆那曲智能温室厂家_那曲智能温室大棚/智慧农业种植温室/智慧温室厂家_阔农温室工程服务那曲哈巴河|福海|青河|富蕴|布尔津(更新时间：2026-08-28 16:05:21)</title>
+    <meta name="keywords" content="西藏那曲智能温室，那曲智能温室大棚/智慧农业种植温室/智慧温室，阔农温室工程，欢迎来电咨询：15298311630(张总)">
+    <meta name="description" content="阔农温室工程1. 温室工艺精良，结构稳固：采用精密折弯、整体焊接工艺成型，整体结构承载力强、不易形变，结构稳定性远超行业常规标准，抗风雪、抗荷载能力优异，适配各类地域气候工况。
+2. 防腐耐蚀，适配农业环境：采用热镀锌工艺处理，镀层均匀、附着力极强，可有效抵御农业种植环境中的潮湿、酸碱侵蚀，适配温室长期高湿特殊使用场景。
+3. 使用寿命长，稳定性高：整体材质性能稳定，抗老化、抗锈蚀能力突出，温室骨架保用30年，服务那曲哈巴河|福海|青河|富蕴|布尔津，欢迎来电咨询：15298311630(张总)">
     <style>
         :root {
-            --primary: #2e7d32;
-            --primary-dark: #1b5e20;
-            --primary-light: #4caf50;
-            --accent: #ff8f00;
-            --text-dark: #1a1a1a;
-            --text-light: #666;
-            --text-white: #fff;
-            --bg-light: #f8f9fa;
+            --primary: #2f7d3f;
+            --primary-dark: #1a4d2a;
+            --primary-light: #4a9e55;
+            --primary-lighter: #6abf75;
+            --accent: #58a05c;
+            --bg-light: #f3f8f3;
             --bg-white: #ffffff;
-            --bg-dark: #1a1a2e;
-            --border-color: #e0e0e0;
-            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
-            --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.16);
-            --radius-sm: 6px;
-            --radius-md: 12px;
+            --text-dark: #1e3a2a;
+            --text-mid: #3d5a45;
+            --text-light: #6b8a72;
+            --shadow-sm: 0 2px 12px rgba(26, 77, 42, 0.08);
+            --shadow-md: 0 8px 32px rgba(26, 77, 42, 0.12);
+            --shadow-lg: 0 16px 48px rgba(26, 77, 42, 0.16);
+            --radius: 12px;
             --radius-lg: 20px;
-            --radius-xl: 30px;
-            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+            --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --font-sans: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
         }
 
-        * {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -37,1550 +39,2054 @@
 
         html {
             scroll-behavior: smooth;
-            -webkit-tap-highlight-color: transparent;
+            font-size: 16px;
         }
 
         body {
-            font-family: var(--font-family);
+            font-family: var(--font-sans);
             color: var(--text-dark);
-            background: var(--bg-white);
-            line-height: 1.6;
+            background: var(--bg-light);
+            line-height: 1.7;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* 加载动画 */
-        .page-loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 99999;
-            transition: opacity 0.5s ease, visibility 0.5s ease;
-        }
-        .page-loader.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-        .loader-spinner {
-            width: 50px;
-            height: 50px;
-            border: 4px solid #e0e0e0;
-            border-top-color: var(--primary);
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-        }
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
+        img {
+            max-width: 100%;
+            display: block;
         }
 
-        /* 顶部信息栏 */
-        .top-bar {
-            background: var(--primary-dark);
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 13px;
-            padding: 8px 0;
-            position: relative;
-            z-index: 1001;
-        }
-        .top-bar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        .top-bar .contact-info {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .top-bar .contact-info span {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .top-bar .contact-info svg {
-            width: 14px;
-            height: 14px;
-            fill: currentColor;
-        }
-        .top-bar .top-links {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-        }
-        .top-bar .top-links a {
-            color: rgba(255, 255, 255, 0.85);
+        a {
             text-decoration: none;
+            color: inherit;
             transition: color var(--transition);
-            font-size: 13px;
-        }
-        .top-bar .top-links a:hover {
-            color: #fff;
         }
 
-        /* 导航栏 */
-        .navbar {
-            background: #fff;
-            box-shadow: var(--shadow-sm);
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ========== HEADER ========== */
+        .header {
             position: sticky;
             top: 0;
             z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(47, 125, 63, 0.1);
+            box-shadow: 0 2px 24px rgba(26, 77, 42, 0.06);
             transition: box-shadow var(--transition);
         }
-        .navbar.scrolled {
-            box-shadow: var(--shadow-md);
+        .header.scrolled {
+            box-shadow: 0 4px 32px rgba(26, 77, 42, 0.12);
         }
-        .navbar .container {
+        .header-inner {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 12px 0;
+            justify-content: space-between;
+            height: 72px;
             gap: 20px;
         }
-        .navbar .logo {
+        .logo {
             display: flex;
             align-items: center;
             gap: 10px;
-            text-decoration: none;
-            font-size: 26px;
+            flex-shrink: 0;
             font-weight: 700;
-            color: var(--primary);
-            letter-spacing: 2px;
+            font-size: 1.25rem;
+            color: var(--primary-dark);
+            letter-spacing: 0.5px;
+            white-space: nowrap;
         }
-        .navbar .logo .logo-icon {
-            width: 42px;
-            height: 42px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #fff;
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 1.15rem;
             flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(47, 125, 63, 0.3);
         }
-        .navbar .logo span {
-            background: linear-gradient(135deg, var(--primary), var(--primary-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .logo span {
+            color: var(--primary);
         }
         .nav-menu {
             display: flex;
-            list-style: none;
-            gap: 4px;
             align-items: center;
+            gap: 28px;
+            list-style: none;
         }
-        .nav-menu li a {
-            display: block;
-            padding: 10px 16px;
-            text-decoration: none;
-            color: var(--text-dark);
-            font-size: 15px;
+        .nav-menu a {
+            font-size: 0.92rem;
             font-weight: 500;
-            border-radius: var(--radius-sm);
-            transition: all var(--transition);
+            color: var(--text-mid);
             position: relative;
-            white-space: nowrap;
+            padding: 4px 0;
+            transition: color var(--transition);
         }
-        .nav-menu li a::after {
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--primary);
+        }
+        .nav-menu a::after {
             content: '';
             position: absolute;
-            bottom: 4px;
-            left: 50%;
-            transform: translateX(-50%);
+            bottom: -2px;
+            left: 0;
             width: 0;
             height: 2px;
             background: var(--primary);
             border-radius: 2px;
             transition: width var(--transition);
         }
-        .nav-menu li a:hover,
-        .nav-menu li a.active {
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after {
+            width: 100%;
+        }
+        .header-phone {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 1rem;
             color: var(--primary);
-            background: rgba(76, 175, 80, 0.08);
+            white-space: nowrap;
+            flex-shrink: 0;
+            background: rgba(47, 125, 63, 0.08);
+            padding: 8px 16px;
+            border-radius: 30px;
+            transition: all var(--transition);
         }
-        .nav-menu li a:hover::after,
-        .nav-menu li a.active::after {
-            width: 60%;
+        .header-phone:hover {
+            background: rgba(47, 125, 63, 0.15);
+            transform: translateY(-1px);
         }
-        .nav-cta {
-            background: var(--primary) !important;
-            color: #fff !important;
-            padding: 10px 20px !important;
-            border-radius: 30px !important;
-            font-weight: 600 !important;
-            transition: all var(--transition) !important;
-        }
-        .nav-cta::after {
-            display: none !important;
-        }
-        .nav-cta:hover {
-            background: var(--primary-dark) !important;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+        .header-phone svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--primary);
+            flex-shrink: 0;
         }
         .hamburger {
             display: none;
             flex-direction: column;
-            cursor: pointer;
             gap: 5px;
-            padding: 8px;
+            cursor: pointer;
             background: none;
             border: none;
+            padding: 6px;
             z-index: 1002;
         }
         .hamburger span {
             width: 26px;
-            height: 3px;
-            background: var(--text-dark);
-            border-radius: 3px;
-            transition: all var(--transition);
+            height: 2.5px;
+            background: var(--primary-dark);
+            border-radius: 4px;
+            transition: all 0.3s ease;
             display: block;
         }
         .hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(6px, 6px);
+            transform: translateY(7.5px) rotate(45deg);
         }
         .hamburger.active span:nth-child(2) {
             opacity: 0;
-            transform: scaleX(0);
         }
         .hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(6px, -6px);
+            transform: translateY(-7.5px) rotate(-45deg);
         }
 
-        /* Hero轮播 */
-        .hero-carousel {
+        /* ========== BANNER ========== */
+        .banner {
             position: relative;
-            height: 520px;
-            overflow: hidden;
-            background: #1a1a2e;
-        }
-        .carousel-slide {
-            position: absolute;
-            inset: 0;
-            opacity: 0;
-            transition: opacity 0.8s ease;
+            min-height: 520px;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0d2b1a 0%, #1a4d2a 35%, #2f7d3f 70%, #3d8f4b 100%);
+            overflow: hidden;
+            padding: 80px 20px;
         }
-        .carousel-slide.active {
-            opacity: 1;
-        }
-        .carousel-slide .slide-bg {
+        .banner::before {
+            content: '';
             position: absolute;
-            inset: 0;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter: brightness(0.55);
+            top: -30%;
+            left: -10%;
+            width: 60%;
+            height: 70%;
+            background: radial-gradient(ellipse at center, rgba(106, 191, 117, 0.25) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: bannerGlow1 8s ease-in-out infinite alternate;
         }
-        .carousel-slide .slide-content {
+        .banner::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            right: -5%;
+            width: 55%;
+            height: 60%;
+            background: radial-gradient(ellipse at center, rgba(88, 160, 92, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: bannerGlow2 10s ease-in-out infinite alternate;
+        }
+        @keyframes bannerGlow1 {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translate(30px, 20px) scale(1.15);
+                opacity: 1;
+            }
+        }
+        @keyframes bannerGlow2 {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.6;
+            }
+            100% {
+                transform: translate(-20px, -15px) scale(1.1);
+                opacity: 0.9;
+            }
+        }
+        .banner-content {
             position: relative;
             z-index: 2;
-            text-align: center;
-            color: #fff;
-            padding: 0 20px;
-            max-width: 800px;
+            max-width: 780px;
         }
-        .carousel-slide .slide-content h1 {
-            font-size: 42px;
+        .banner-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(8px);
+            padding: 6px 18px;
+            border-radius: 30px;
+            color: #d9f0db;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.2s forwards;
+        }
+        .banner-title {
+            font-size: 2.8rem;
             font-weight: 700;
+            color: #ffffff;
+            line-height: 1.25;
             margin-bottom: 16px;
             letter-spacing: 2px;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-            animation: fadeInUp 0.8s ease;
+            opacity: 0;
+            animation: fadeUp 0.9s ease 0.4s forwards;
+            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
         }
-        .carousel-slide .slide-content p {
-            font-size: 18px;
-            margin-bottom: 28px;
-            opacity: 0.9;
-            animation: fadeInUp 1s ease;
+        .banner-title .highlight {
+            color: #a8e6b0;
+            position: relative;
         }
-        .carousel-slide .slide-content .btn {
-            display: inline-block;
-            padding: 14px 36px;
-            background: var(--primary);
+        .banner-subtitle {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 12px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            opacity: 0;
+            animation: fadeUp 0.9s ease 0.6s forwards;
+        }
+        .banner-desc {
+            font-size: 0.98rem;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
+            margin: 0 auto 28px;
+            line-height: 1.8;
+            opacity: 0;
+            animation: fadeUp 0.9s ease 0.75s forwards;
+        }
+        .banner-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 14px 32px;
+            border-radius: 50px;
             color: #fff;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 2px;
             transition: all var(--transition);
-            animation: fadeInUp 1.2s ease;
-            border: none;
+            opacity: 0;
+            animation: fadeUp 0.9s ease 0.9s forwards;
             cursor: pointer;
-            letter-spacing: 1px;
         }
-        .carousel-slide .slide-content .btn:hover {
-            background: var(--primary-dark);
+        .banner-phone:hover {
+            background: rgba(255, 255, 255, 0.25);
             transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(46, 125, 50, 0.4);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
         }
-        @keyframes fadeInUp {
-            from {
+        .banner-phone svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+        @keyframes fadeUp {
+            0% {
                 opacity: 0;
                 transform: translateY(30px);
             }
-            to {
+            100% {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        .carousel-btn {
+        .banner-scroll-hint {
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            cursor: pointer;
-            z-index: 5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 20px;
-            transition: all var(--transition);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
-        .carousel-btn:hover {
-            background: rgba(255, 255, 255, 0.35);
-            transform: translateY(-50%) scale(1.08);
-        }
-        .carousel-btn.prev {
-            left: 20px;
-        }
-        .carousel-btn.next {
-            right: 20px;
-        }
-        .carousel-dots {
-            position: absolute;
-            bottom: 20px;
+            bottom: 28px;
             left: 50%;
             transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-            z-index: 5;
+            z-index: 2;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            animation: bounceDown 2s ease-in-out infinite;
         }
-        .carousel-dots .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.4);
-            border: none;
-            cursor: pointer;
-            transition: all var(--transition);
-        }
-        .carousel-dots .dot.active {
-            background: #fff;
-            width: 30px;
-            border-radius: 5px;
+        @keyframes bounceDown {
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(8px);
+            }
         }
 
-        /* 通用容器 */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        /* ========== SECTION COMMON ========== */
+        .section {
+            padding: 80px 0;
         }
-
-        /* 分区标题 */
         .section-title {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        .section-title .subtitle {
-            display: inline-block;
-            color: var(--primary);
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-        .section-title h2 {
-            font-size: 36px;
+            font-size: 2rem;
             font-weight: 700;
-            letter-spacing: 1px;
+            color: var(--primary-dark);
+            text-align: center;
             margin-bottom: 12px;
+            letter-spacing: 1px;
         }
-        .section-title .title-line {
+        .section-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            text-align: center;
+            max-width: 560px;
+            margin: 0 auto 48px;
+            line-height: 1.8;
+        }
+        .section-divider {
             width: 60px;
             height: 3px;
-            background: var(--primary);
-            margin: 0 auto;
-            border-radius: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-lighter));
+            border-radius: 3px;
+            margin: 0 auto 16px;
         }
 
-        /* 关于我们 */
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 {
+            transition-delay: 0.1s;
+        }
+        .reveal-delay-2 {
+            transition-delay: 0.2s;
+        }
+        .reveal-delay-3 {
+            transition-delay: 0.3s;
+        }
+        .reveal-delay-4 {
+            transition-delay: 0.4s;
+        }
+
+        /* ========== ABOUT ========== */
         .about-section {
-            padding: 80px 0;
-            background: var(--bg-light);
+            background: var(--bg-white);
         }
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 50px;
+            gap: 56px;
             align-items: center;
         }
-        .about-image {
-            position: relative;
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-        }
-        .about-image img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            display: block;
-        }
-        .about-image .exp-badge {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            background: var(--primary);
-            color: #fff;
-            padding: 16px 22px;
-            border-radius: var(--radius-md);
-            text-align: center;
-            font-weight: 700;
-            box-shadow: var(--shadow-md);
-        }
-        .about-image .exp-badge .number {
-            font-size: 28px;
-            display: block;
-        }
-        .about-content h3 {
-            font-size: 28px;
+        .about-text h3 {
+            font-size: 1.5rem;
+            color: var(--primary-dark);
             margin-bottom: 16px;
-            font-weight: 700;
-            color: var(--text-dark);
+            font-weight: 600;
         }
-        .about-content p {
-            color: var(--text-light);
-            margin-bottom: 16px;
-            font-size: 15px;
+        .about-text p {
+            color: var(--text-mid);
+            margin-bottom: 14px;
+            font-size: 0.95rem;
+            line-height: 1.85;
         }
-        .about-features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 14px;
-            margin-top: 24px;
-        }
-        .about-feature {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--text-dark);
-        }
-        .about-feature .check-icon {
-            width: 22px;
-            height: 22px;
-            background: rgba(76, 175, 80, 0.15);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .about-text .phone-inline {
+            display: inline-block;
             color: var(--primary);
-            font-size: 12px;
-            flex-shrink: 0;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            border-bottom: 2px dashed var(--primary-light);
+            padding-bottom: 2px;
+            transition: all var(--transition);
+        }
+        .about-text .phone-inline:hover {
+            color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+        .about-img-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .about-img-wrap::before {
+            content: '';
+            position: absolute;
+            inset: -16px;
+            border: 2px dashed rgba(47, 125, 63, 0.2);
+            border-radius: var(--radius-lg);
+            pointer-events: none;
+        }
+        .about-img-wrap img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            object-fit: contain;
+            transition: transform var(--transition);
+        }
+        .about-img-wrap:hover img {
+            transform: scale(1.02);
         }
 
-        /* 产品展示 */
+        /* ========== PRODUCTS ========== */
         .products-section {
-            padding: 80px 0;
-            background: #fff;
+            background: var(--bg-light);
         }
-        .products-grid {
+        .product-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .product-tab {
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: 2px solid transparent;
+            background: var(--bg-white);
+            color: var(--text-mid);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition);
+            letter-spacing: 0.5px;
+            user-select: none;
+        }
+        .product-tab:hover {
+            border-color: var(--primary-light);
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        .product-tab.active {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #fff;
+            border-color: var(--primary);
+            box-shadow: 0 8px 24px rgba(47, 125, 63, 0.35);
+        }
+        .product-panel {
+            display: none;
+            animation: panelFadeIn 0.5s ease forwards;
+        }
+        .product-panel.active {
+            display: block;
+        }
+        @keyframes panelFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .product-card {
+            background: var(--bg-white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition);
+            cursor: pointer;
+            position: relative;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+        .product-card-img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            background: #e8f5e9;
+            position: relative;
+        }
+        .product-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .product-card:hover .product-card-img img {
+            transform: scale(1.08);
+        }
+        .product-card-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 55%, rgba(26, 77, 42, 0.4) 100%);
+            pointer-events: none;
+        }
+        .product-card-info {
+            padding: 14px 16px;
+            text-align: center;
+        }
+        .product-card-info h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            letter-spacing: 0.5px;
+        }
+        .product-card-info .product-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            color: var(--primary);
+            background: rgba(47, 125, 63, 0.08);
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-top: 6px;
+            letter-spacing: 1px;
+        }
+
+        /* ========== ADVANTAGES ========== */
+        .advantages-section {
+            background: var(--bg-white);
+        }
+        .advantages-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 24px;
         }
-        .product-card {
-            background: #fff;
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: all var(--transition);
-            border: 1px solid var(--border-color);
-            cursor: pointer;
-        }
-        .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--primary-light);
-        }
-        .product-card .product-img {
-            height: 200px;
-            overflow: hidden;
-            position: relative;
-        }
-        .product-card .product-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        .product-card:hover .product-img img {
-            transform: scale(1.1);
-        }
-        .product-card .product-tag {
-            position: absolute;
-            top: 12px;
-            left: 12px;
-            background: var(--accent);
-            color: #fff;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-        .product-card .product-info {
-            padding: 18px;
-        }
-        .product-card .product-info h4 {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
-        .product-card .product-info p {
-            font-size: 13px;
-            color: var(--text-light);
-            margin-bottom: 12px;
-        }
-        .product-card .product-info .price {
-            color: var(--primary);
-            font-weight: 700;
-            font-size: 18px;
-        }
-
-        /* 服务项目 */
-        .services-section {
-            padding: 80px 0;
+        .advantage-card {
             background: var(--bg-light);
-        }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-        }
-        .service-card {
-            background: #fff;
+            border-radius: var(--radius);
             padding: 32px 24px;
-            border-radius: var(--radius-md);
             text-align: center;
-            box-shadow: var(--shadow-sm);
             transition: all var(--transition);
-            border: 1px solid transparent;
+            border: 1px solid rgba(47, 125, 63, 0.06);
+            position: relative;
+            overflow: hidden;
         }
-        .service-card:hover {
+        .advantage-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-lighter));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition);
+        }
+        .advantage-card:hover::before {
+            transform: scaleX(1);
+        }
+        .advantage-card:hover {
+            transform: translateY(-6px);
             box-shadow: var(--shadow-md);
-            border-color: var(--primary-light);
-            transform: translateY(-4px);
         }
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(76, 175, 80, 0.2));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .advantage-icon {
+            width: 56px;
+            height: 56px;
             margin: 0 auto 16px;
-            font-size: 30px;
-        }
-        .service-card h4 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        .service-card p {
-            font-size: 14px;
-            color: var(--text-light);
-        }
-
-        /* 数据统计 */
-        .stats-section {
-            padding: 60px 0;
-            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-            color: #fff;
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            text-align: center;
-        }
-        .stat-item .stat-number {
-            font-size: 42px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin-bottom: 4px;
-        }
-        .stat-item .stat-label {
-            font-size: 14px;
-            opacity: 0.85;
-            letter-spacing: 1px;
-        }
-
-        /* 联系我们 */
-        .contact-section {
-            padding: 80px 0;
-            background: #fff;
-        }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-        .contact-info-cards {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-        }
-        .contact-card {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            padding: 20px;
-            background: var(--bg-light);
-            border-radius: var(--radius-md);
-            transition: all var(--transition);
-        }
-        .contact-card:hover {
-            background: #fff;
-            box-shadow: var(--shadow-sm);
-        }
-        .contact-card .contact-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--primary);
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #fff;
-            font-size: 20px;
-            flex-shrink: 0;
+            font-size: 1.5rem;
+            box-shadow: 0 6px 18px rgba(47, 125, 63, 0.3);
         }
-        .contact-card .contact-detail h4 {
-            font-size: 15px;
+        .advantage-card h4 {
+            font-size: 1.05rem;
+            color: var(--primary-dark);
+            margin-bottom: 8px;
             font-weight: 600;
-            margin-bottom: 2px;
         }
-        .contact-card .contact-detail p {
-            font-size: 14px;
+        .advantage-card p {
+            font-size: 0.85rem;
             color: var(--text-light);
-        }
-        .contact-card .contact-detail a {
-            color: var(--text-light);
-            text-decoration: none;
-            transition: color var(--transition);
-        }
-        .contact-card .contact-detail a:hover {
-            color: var(--primary);
-        }
-        .contact-form {
-            background: var(--bg-light);
-            padding: 32px;
-            border-radius: var(--radius-md);
-            box-shadow: var(--shadow-sm);
-        }
-        .contact-form h3 {
-            font-size: 22px;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-        .form-group {
-            margin-bottom: 16px;
-        }
-        .form-group label {
-            display: block;
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 6px;
-            color: var(--text-dark);
-        }
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 16px;
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-sm);
-            font-size: 14px;
-            font-family: inherit;
-            transition: all var(--transition);
-            background: #fff;
-            outline: none;
-        }
-        .form-group input:focus,
-        .form-group textarea:focus {
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
-        }
-        .form-group textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-        .submit-btn {
-            width: 100%;
-            padding: 14px;
-            background: var(--primary);
-            color: #fff;
-            border: none;
-            border-radius: var(--radius-sm);
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all var(--transition);
-            letter-spacing: 1px;
-            font-family: inherit;
-        }
-        .submit-btn:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+            line-height: 1.7;
         }
 
-        /* 页脚 */
+        /* ========== FOOTER ========== */
         .footer {
-            background: #1a1a2e;
-            color: rgba(255, 255, 255, 0.8);
-            padding: 50px 0 20px;
+            background: linear-gradient(135deg, #0d2b1a 0%, #1a4d2a 100%);
+            color: rgba(255, 255, 255, 0.75);
+            padding: 60px 0 30px;
         }
         .footer-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1.5fr;
-            gap: 30px;
-            margin-bottom: 30px;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
         }
-        .footer-about h3 {
-            font-size: 22px;
-            margin-bottom: 12px;
+        .footer-brand h3 {
+            font-size: 1.3rem;
             color: #fff;
+            margin-bottom: 12px;
             font-weight: 700;
         }
-        .footer-about p {
-            font-size: 13px;
+        .footer-brand p {
+            font-size: 0.85rem;
             line-height: 1.8;
+            color: rgba(255, 255, 255, 0.6);
         }
-        .footer-links h4 {
+        .footer-links-title {
+            font-size: 0.95rem;
             color: #fff;
-            font-size: 16px;
-            margin-bottom: 14px;
             font-weight: 600;
-        }
-        .footer-links ul {
-            list-style: none;
-        }
-        .footer-links ul li {
-            margin-bottom: 8px;
-        }
-        .footer-links ul li a {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            font-size: 13px;
-            transition: color var(--transition);
-        }
-        .footer-links ul li a:hover {
-            color: #fff;
-        }
-        .footer-contact h4 {
-            color: #fff;
-            font-size: 16px;
             margin-bottom: 14px;
-            font-weight: 600;
+            letter-spacing: 1px;
         }
-        .footer-contact p {
-            font-size: 13px;
-            margin-bottom: 8px;
+        .friend-links,
+        .all-links {
             display: flex;
-            align-items: center;
-            gap: 8px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .friend-links a,
+        .all-links a {
+            display: inline-block;
+            padding: 6px 14px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.65);
+            transition: all var(--transition);
+            letter-spacing: 0.5px;
+        }
+        .friend-links a:hover,
+        .all-links a:hover {
+            background: rgba(255, 255, 255, 0.16);
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
         }
         .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 16px;
+            padding-top: 24px;
             text-align: center;
-            font-size: 12px;
+            font-size: 0.8rem;
             color: rgba(255, 255, 255, 0.5);
-        }
-        .footer-bottom a {
-            color: rgba(255, 255, 255, 0.6);
-            text-decoration: none;
+            letter-spacing: 0.5px;
         }
 
-        /* 回到顶部 */
-        .back-to-top {
+        /* ========== MOBILE CALL BUTTON ========== */
+        .mobile-call-btn {
+            display: none;
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 44px;
-            height: 44px;
-            background: var(--primary);
-            color: #fff;
-            border: none;
+            bottom: 28px;
+            right: 20px;
+            z-index: 999;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
             border-radius: 50%;
-            cursor: pointer;
-            font-size: 20px;
-            box-shadow: var(--shadow-md);
-            display: flex;
+            box-shadow: 0 8px 28px rgba(47, 125, 63, 0.5);
             align-items: center;
             justify-content: center;
-            opacity: 0;
-            visibility: hidden;
+            cursor: pointer;
             transition: all var(--transition);
-            z-index: 999;
+            animation: pulseRing 2.2s ease-in-out infinite;
         }
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
+        .mobile-call-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 36px rgba(47, 125, 63, 0.6);
         }
-        .back-to-top:hover {
-            background: var(--primary-dark);
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
+        .mobile-call-btn svg {
+            width: 26px;
+            height: 26px;
+            fill: #fff;
+        }
+        @keyframes pulseRing {
+            0% {
+                box-shadow: 0 0 0 0 rgba(47, 125, 63, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 0 14px rgba(47, 125, 63, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(47, 125, 63, 0);
+            }
         }
 
-        /* 响应式设计 */
+        /* ========== RESPONSIVE ========== */
         @media (max-width: 1024px) {
-            .products-grid {
+            .product-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
-            .services-grid {
+            .advantages-grid {
                 grid-template-columns: repeat(2, 1fr);
-            }
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
             }
         }
 
         @media (max-width: 768px) {
-            .top-bar .container {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
+            .header-inner {
+                height: 60px;
             }
-            .top-bar .contact-info {
-                justify-content: center;
+            .nav-menu {
+                position: fixed;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                gap: 0;
+                padding: 16px 0;
+                box-shadow: 0 20px 40px rgba(26, 77, 42, 0.15);
+                border-radius: 0 0 16px 16px;
+                transform: translateY(-120%);
+                transition: transform 0.4s ease;
+                z-index: 1001;
+            }
+            .nav-menu.open {
+                transform: translateY(0);
+            }
+            .nav-menu a {
+                display: block;
+                padding: 14px 28px;
+                font-size: 1rem;
+                border-bottom: 1px solid rgba(47, 125, 63, 0.06);
+            }
+            .nav-menu a::after {
+                display: none;
+            }
+            .header-phone {
+                display: none;
             }
             .hamburger {
                 display: flex;
             }
-            .nav-menu {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 280px;
-                height: 100vh;
-                background: #fff;
-                flex-direction: column;
-                padding: 80px 20px 20px;
-                box-shadow: var(--shadow-lg);
-                transition: right 0.4s ease;
-                z-index: 1001;
-                gap: 4px;
-                align-items: stretch;
-                overflow-y: auto;
+            .banner {
+                min-height: 440px;
+                padding: 60px 16px;
             }
-            .nav-menu.open {
-                right: 0;
+            .banner-title {
+                font-size: 1.8rem;
+                letter-spacing: 1px;
             }
-            .nav-menu li a {
-                padding: 14px 16px;
-                font-size: 16px;
-                text-align: center;
+            .banner-subtitle {
+                font-size: 0.9rem;
+                letter-spacing: 2px;
             }
-            .nav-cta {
-                margin-top: 10px;
-                text-align: center;
+            .banner-desc {
+                font-size: 0.85rem;
             }
-            .hero-carousel {
-                height: 400px;
+            .banner-phone {
+                font-size: 1.1rem;
+                padding: 12px 24px;
             }
-            .carousel-slide .slide-content h1 {
-                font-size: 28px;
+            .section {
+                padding: 56px 0;
             }
-            .carousel-slide .slide-content p {
-                font-size: 15px;
-            }
-            .carousel-btn {
-                width: 36px;
-                height: 36px;
-                font-size: 16px;
-            }
-            .carousel-btn.prev {
-                left: 10px;
-            }
-            .carousel-btn.next {
-                right: 10px;
+            .section-title {
+                font-size: 1.5rem;
             }
             .about-grid {
                 grid-template-columns: 1fr;
-                gap: 30px;
+                gap: 32px;
             }
-            .about-image img {
-                height: 280px;
+            .about-img-wrap img {
+                max-width: 100%;
             }
-            .products-grid {
+            .product-grid {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .product-card-info h4 {
+                font-size: 0.8rem;
+            }
+            .advantages-grid {
+                grid-template-columns: 1fr;
                 gap: 16px;
-            }
-            .product-card .product-img {
-                height: 150px;
-            }
-            .services-grid {
-                grid-template-columns: 1fr;
-                gap: 18px;
-            }
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-            .section-title h2 {
-                font-size: 28px;
-            }
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 30px;
-            }
-            .stat-item .stat-number {
-                font-size: 32px;
             }
             .footer-grid {
                 grid-template-columns: 1fr;
-                gap: 24px;
+                gap: 28px;
             }
-            .back-to-top {
-                bottom: 16px;
-                right: 16px;
-                width: 40px;
-                height: 40px;
+            .mobile-call-btn {
+                display: flex;
+            }
+            .product-tab {
+                padding: 8px 16px;
+                font-size: 0.8rem;
             }
         }
 
         @media (max-width: 480px) {
-            .products-grid {
-                grid-template-columns: 1fr;
+            .product-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
             }
-            .hero-carousel {
-                height: 350px;
+            .product-card-info {
+                padding: 10px 8px;
             }
-            .carousel-slide .slide-content h1 {
-                font-size: 22px;
+            .product-card-info h4 {
+                font-size: 0.72rem;
             }
-            .carousel-slide .slide-content p {
-                font-size: 14px;
-                margin-bottom: 18px;
+            .banner-title {
+                font-size: 1.4rem;
             }
-            .carousel-slide .slide-content .btn {
-                padding: 10px 24px;
-                font-size: 14px;
+            .logo {
+                font-size: 1rem;
             }
-            .contact-form {
-                padding: 20px;
+            .logo-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 0.9rem;
             }
-            .about-features {
-                grid-template-columns: 1fr;
+            .product-tabs {
+                gap: 6px;
             }
-            .stats-grid {
-                grid-template-columns: 1fr;
+            .product-tab {
+                padding: 6px 12px;
+                font-size: 0.72rem;
+                border-radius: 20px;
             }
         }
     </style>
 </head>
 <body>
 
-<!-- 页面加载动画 -->
-<div class="page-loader" id="pageLoader">
-    <div class="loader-spinner"></div>
-</div>
-
-<!-- 顶部信息栏 -->
-<div class="top-bar">
-    <div class="container">
-        <div class="contact-info">
-                <span>
-                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                    15298311630
-                </span>
-            <span>
-                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                    kuonong@163.com
-                </span>
-            <span>
-                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                    江苏省宿迁市
-                </span>
-        </div>
-        <div class="top-links">
-            <a href="#contact">联系我们</a>
-            <a href="#products">产品中心</a>
-        </div>
-    </div>
-</div>
-
-<!-- 导航栏 -->
-<nav class="navbar" id="navbar">
-    <div class="container">
+<!-- ==================== HEADER ==================== -->
+<header class="header scrolled" id="header">
+    <div class="container header-inner">
         <a href="#" class="logo">
-            <div class="logo-icon">阔</div>
-            <span>阔农</span>
+            <div class="logo-icon">🌿</div>
+            阔农温室工程 · 那曲站
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="">首页</a></li>
+            <li><a href="#about" class="">公司介绍</a></li>
+            <li><a href="#products" class="active">产品展示</a></li>
+            <li><a href="#advantages" class="">服务优势</a></li>
+            <li><a href="#footer">联系我们</a></li>
+        </ul>
+        <a href="tel:15298311630" class="header-phone">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+            15298311630
         </a>
         <button class="hamburger" id="hamburger" aria-label="菜单">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </button>
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#" class="active">首页</a></li>
-            <li><a href="#about">关于我们</a></li>
-            <li><a href="#products">产品展示</a></li>
-            <li><a href="#services">服务项目</a></li>
-            <li><a href="#contact">联系我们</a></li>
-            <li><a href="tel:15298311630" class="nav-cta">立即咨询</a></li>
-        </ul>
     </div>
-</nav>
+</header>
 
-<!-- Hero 轮播 -->
-<section class="hero-carousel" id="heroCarousel">
-    <div class="carousel-slide active" data-index="0">
-        <div class="slide-bg" style="background-image: linear-gradient(135deg, #1a1a2e 0%, #2d4a2d 50%, #1a3a1a 100%);"></div>
-        <div class="slide-content">
-            <h1>阔农农业科技</h1>
-            <p>专注现代农业发展，提供优质农产品与专业技术服务</p>
-            <a href="#contact" class="btn">了解更多</a>
-        </div>
+<!-- ==================== BANNER ==================== -->
+<section class="banner" id="home">
+    <div class="banner-content">
+        <div class="banner-badge">专注高品质温室工程</div>
+        <h1 class="banner-title">阔农温室工程<span class="highlight">厂家</span></h1>
+        <p class="banner-subtitle">打造高品质 · 智能化 · 耐用型温室工程</p>
+        <p class="banner-desc">自产自营，源头供货，全产业链一站式服务，覆盖日光温室、薄膜温室、连栋温室、玻璃温室、智能温室等全场景温室建设需求</p>
+        <a href="tel:15298311630" class="banner-phone">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+            15298311630
+        </a>
     </div>
-    <div class="carousel-slide" data-index="1">
-        <div class="slide-bg" style="background-image: linear-gradient(135deg, #0d1f0d 0%, #1a3a2a 40%, #2d5a3d 100%);"></div>
-        <div class="slide-content">
-            <h1>绿色生态种植</h1>
-            <p>坚持绿色环保理念，打造健康安全农产品</p>
-            <a href="#products" class="btn">查看产品</a>
-        </div>
-    </div>
-    <div class="carousel-slide" data-index="2">
-        <div class="slide-bg" style="background-image: linear-gradient(135deg, #1a1a2e 0%, #2a3a4a 50%, #1a2a3a 100%);"></div>
-        <div class="slide-content">
-            <h1>专业农业服务</h1>
-            <p>提供全方位农业技术指导与解决方案</p>
-            <a href="#services" class="btn">服务项目</a>
-        </div>
-    </div>
-    <button class="carousel-btn prev" id="prevBtn" aria-label="上一张">❮</button>
-    <button class="carousel-btn next" id="nextBtn" aria-label="下一张">❯</button>
-    <div class="carousel-dots" id="carouselDots">
-        <button class="dot active" data-index="0" aria-label="第1张"></button>
-        <button class="dot" data-index="1" aria-label="第2张"></button>
-        <button class="dot" data-index="2" aria-label="第3张"></button>
-    </div>
+    <div class="banner-scroll-hint">SCROLL DOWN</div>
 </section>
 
-<!-- 关于我们 -->
-<section class="about-section" id="about">
+<!-- ==================== ABOUT ==================== -->
+<section class="section about-section" id="about">
     <div class="container">
-        <div class="section-title">
-            <span class="subtitle">About Us</span>
-            <h2>关于阔农</h2>
-            <div class="title-line"></div>
-        </div>
+        <div class="section-divider reveal visible"></div>
+        <h2 class="section-title reveal visible">公司介绍</h2>
+        <p class="section-subtitle reveal reveal-delay-1 visible">专注温室工程全产业链服务，以匠心品质助力现代农业</p>
         <div class="about-grid">
-            <div class="about-image">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%232e7d32'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='48' fill='white' font-family='sans-serif'%3E阔农%3C/text%3E%3Ctext x='50%25' y='65%25' text-anchor='middle' font-size='18' fill='rgba(255,255,255,0.8)' font-family='sans-serif'%3E农业科技%3C/text%3E%3C/svg%3E" alt="阔农农业科技" loading="lazy">
-                <div class="exp-badge">
-                    <span class="number">15+</span>
-                    年行业经验
-                </div>
+            <div class="about-text reveal reveal-delay-1 visible">
+                <h3>阔农温室专注打造高品质、智能化、耐用型温室工程</h3>
+                <p>阔农温室专注打造高品质、智能化、耐用型温室工程，专注生产实力和专业的施工技术，赢得了全国各地客户的广泛认可与信赖。公司产品品类齐全，覆盖全场景温室建设需求，主营日光温室、薄膜温室、连栋温室、玻璃温室、智能温室等各类温室工程，同时生产温室骨架、温室铝材等核心配套型材，实现自产自营、源头供货模式。</p>
+                <p>省去中间商环节，既能严格把控原材料品质，又能有效控制项目成本，保障产品性价比，同时大幅缩短供货与施工周期，适配种植、育苗、养殖、观光农业、科研示范等多种场景。团队可根据客户场地地形、当地气候、种植品类，一对一定制专属温室方案，拒绝同质化设计。</p>
+                <p>在技术与品质方面，拥有技术方案团队和标准化生产施工团队。所有温室骨架采用精密工艺加工，防腐防锈、结构稳固、承载力强、使用寿命久；智能温室搭载现代化环境调控系统，可自动调控温湿度、光照、通风，助力现代农业精细化、高效化种植。</p>
+                <p>依托全产业链服务优势，公司提供从场地勘测、方案设计、型材生产、工程施工到后期运维的一站式交钥匙服务。始终秉持匠心品质、诚信经营的理念，严格把控每一道施工工序，完善售后保障体系，以靠谱的工程质量、贴心的全程服务，为广大农业从业者搭建高效、稳定、高产的现代化种植设施。</p>
+                <p>咨询热线：<a href="tel:15298311630" class="phone-inline">15298311630</a></p>
             </div>
-            <div class="about-content">
-                <h3>致力于现代农业发展与创新</h3>
-                <p>阔农农业科技有限公司成立于2009年，是一家专注于现代农业科技研发、农产品种植与销售、农业技术服务于一体的综合性农业企业。公司秉承"绿色、健康、创新、共赢"的经营理念，致力于为消费者提供安全、优质的农产品。</p>
-                <p>公司拥有现代化种植基地2000余亩，引进先进的农业技术和管理模式，采用绿色生态种植方式，确保每一份产品的品质与安全。</p>
-                <div class="about-features">
-                    <div class="about-feature">
-                        <span class="check-icon">✓</span> 绿色生态种植
-                    </div>
-                    <div class="about-feature">
-                        <span class="check-icon">✓</span> 专业技术团队
-                    </div>
-                    <div class="about-feature">
-                        <span class="check-icon">✓</span> 现代化管理
-                    </div>
-                    <div class="about-feature">
-                        <span class="check-icon">✓</span> 品质保证体系
-                    </div>
-                </div>
+            <div class="about-img-wrap reveal reveal-delay-2 visible">
+                <img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787895199139-t6gsbt.png" alt="阔农温室工程宣传图" loading="lazy">
             </div>
         </div>
     </div>
 </section>
 
-<!-- 产品展示 -->
-<section class="products-section" id="products">
+<!-- ==================== PRODUCTS ==================== -->
+<section class="section products-section" id="products">
     <div class="container">
-        <div class="section-title">
-            <span class="subtitle">Our Products</span>
-            <h2>产品展示</h2>
-            <div class="title-line"></div>
+        <div class="section-divider reveal visible"></div>
+        <h2 class="section-title reveal visible">产品展示</h2>
+        <p class="section-subtitle reveal reveal-delay-1 visible">全品类温室工程，满足多元化种植与养殖需求</p>
+
+        <div class="product-tabs reveal reveal-delay-1 visible" id="productTabs">
+            <button class="product-tab" data-target="panel-glass">那曲玻璃温室</button>
+            <button class="product-tab" data-target="panel-soilless">那曲无土栽培</button>
+            <button class="product-tab" data-target="panel-film">那曲薄膜温室日光温室</button>
+            <button class="product-tab active" data-target="panel-smart">那曲智能温室</button>
         </div>
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23e8f5e9'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='24' fill='%232e7d32' font-family='sans-serif'%3E有机蔬菜%3C/text%3E%3C/svg%3E" alt="有机蔬菜" loading="lazy">
-                    <span class="product-tag">热销</span>
-                </div>
-                <div class="product-info">
-                    <h4>有机蔬菜系列</h4>
-                    <p>绿色种植，新鲜直供，营养丰富</p>
-                    <span class="price">¥28.00起</span>
-                </div>
+
+        <!-- 玻璃温室 -->
+        <div class="product-panel" id="panel-glass">
+            <div class="product-grid">
+                <div class="product-card reveal visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787902003532-bncd97.jpg" alt="那曲玻璃温室" loading="lazy"></div><div class="product-card-info"><h4>那曲玻璃温室 · 精品案例一</h4><span class="product-tag">玻璃温室</span></div></div>
+                <div class="product-card reveal reveal-delay-1 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787902003599-gxkfie.jpg" alt="那曲玻璃温室" loading="lazy"></div><div class="product-card-info"><h4>那曲玻璃温室 · 精品案例二</h4><span class="product-tag">玻璃温室</span></div></div>
+                <div class="product-card reveal reveal-delay-2 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787896283794-flz2q7.jpg" alt="那曲玻璃温室" loading="lazy"></div><div class="product-card-info"><h4>那曲玻璃温室 · 精品案例三</h4><span class="product-tag">玻璃温室</span></div></div>
+                <div class="product-card reveal reveal-delay-3 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787902003468-1bgcw7.jpg" alt="那曲玻璃温室" loading="lazy"></div><div class="product-card-info"><h4>那曲玻璃温室 · 精品案例四</h4><span class="product-tag">玻璃温室</span></div></div>
+                <div class="product-card reveal visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787896283637-abddiv.jpg" alt="那曲玻璃温室" loading="lazy"></div><div class="product-card-info"><h4>那曲玻璃温室 · 精品案例五</h4><span class="product-tag">玻璃温室</span></div></div>
+                <div class="product-card reveal reveal-delay-1 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787896283719-ch4ye0.jpg" alt="那曲玻璃温室" loading="lazy"></div><div class="product-card-info"><h4>那曲玻璃温室 · 精品案例六</h4><span class="product-tag">玻璃温室</span></div></div>
+                <div class="product-card reveal reveal-delay-2 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787896318740-2rqem8.jpg" alt="那曲玻璃温室" loading="lazy"></div><div class="product-card-info"><h4>那曲玻璃温室 · 精品案例七</h4><span class="product-tag">玻璃温室</span></div></div>
+                <div class="product-card reveal reveal-delay-3 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787902018673-1c0u4u.jpg" alt="那曲玻璃温室" loading="lazy"></div><div class="product-card-info"><h4>那曲玻璃温室 · 精品案例八</h4><span class="product-tag">玻璃温室</span></div></div>
             </div>
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23fff3e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='24' fill='%23e65100' font-family='sans-serif'%3E优质水果%3C/text%3E%3C/svg%3E" alt="优质水果" loading="lazy">
-                    <span class="product-tag">新品</span>
-                </div>
-                <div class="product-info">
-                    <h4>优质水果系列</h4>
-                    <p>自然成熟，甜美多汁，产地直发</p>
-                    <span class="price">¥45.00起</span>
-                </div>
+        </div>
+
+        <!-- 无土栽培 -->
+        <div class="product-panel" id="panel-soilless">
+            <div class="product-grid">
+                <div class="product-card reveal visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787896872882-9fn180.jpg" alt="那曲无土栽培" loading="lazy"></div><div class="product-card-info"><h4>那曲无土栽培 · 精品案例一</h4><span class="product-tag">无土栽培</span></div></div>
+                <div class="product-card reveal reveal-delay-1 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897051031-z99b5i.jpg" alt="那曲无土栽培" loading="lazy"></div><div class="product-card-info"><h4>那曲无土栽培 · 精品案例二</h4><span class="product-tag">无土栽培</span></div></div>
+                <div class="product-card reveal reveal-delay-2 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897050966-hgiv22.jpg" alt="那曲无土栽培" loading="lazy"></div><div class="product-card-info"><h4>那曲无土栽培 · 精品案例三</h4><span class="product-tag">无土栽培</span></div></div>
+                <div class="product-card reveal reveal-delay-3 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897050837-qaafb9.jpg" alt="那曲无土栽培" loading="lazy"></div><div class="product-card-info"><h4>那曲无土栽培 · 精品案例四</h4><span class="product-tag">无土栽培</span></div></div>
+                <div class="product-card reveal visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787896871548-c03ksz.jpg" alt="那曲无土栽培" loading="lazy"></div><div class="product-card-info"><h4>那曲无土栽培 · 精品案例五</h4><span class="product-tag">无土栽培</span></div></div>
+                <div class="product-card reveal reveal-delay-1 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787896873200-vsiuem.jpg" alt="那曲无土栽培" loading="lazy"></div><div class="product-card-info"><h4>那曲无土栽培 · 精品案例六</h4><span class="product-tag">无土栽培</span></div></div>
+                <div class="product-card reveal reveal-delay-2 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787896874754-zf6nci.jpg" alt="那曲无土栽培" loading="lazy"></div><div class="product-card-info"><h4>那曲无土栽培 · 精品案例七</h4><span class="product-tag">无土栽培</span></div></div>
+                <div class="product-card reveal reveal-delay-3 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787896871633-855ix6.jpg" alt="那曲无土栽培" loading="lazy"></div><div class="product-card-info"><h4>那曲无土栽培 · 精品案例八</h4><span class="product-tag">无土栽培</span></div></div>
             </div>
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f3e5f5'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='24' fill='%236a1b9a' font-family='sans-serif'%3E五谷杂粮%3C/text%3E%3C/svg%3E" alt="五谷杂粮" loading="lazy">
-                    <span class="product-tag">精选</span>
-                </div>
-                <div class="product-info">
-                    <h4>五谷杂粮系列</h4>
-                    <p>传统种植，营养健康，粒粒精选</p>
-                    <span class="price">¥18.00起</span>
-                </div>
+        </div>
+
+        <!-- 薄膜温室日光温室 -->
+        <div class="product-panel" id="panel-film">
+            <div class="product-grid">
+                <div class="product-card reveal visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897445903-wxlg65.jpg" alt="那曲薄膜温室日光温室" loading="lazy"></div><div class="product-card-info"><h4>那曲薄膜温室日光温室 · 案例一</h4><span class="product-tag">薄膜温室</span></div></div>
+                <div class="product-card reveal reveal-delay-1 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897446309-a9nn3e.jpg" alt="那曲薄膜温室日光温室" loading="lazy"></div><div class="product-card-info"><h4>那曲薄膜温室日光温室 · 案例二</h4><span class="product-tag">薄膜温室</span></div></div>
+                <div class="product-card reveal reveal-delay-2 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897445726-k8ew7x.jpg" alt="那曲薄膜温室日光温室" loading="lazy"></div><div class="product-card-info"><h4>那曲薄膜温室日光温室 · 案例三</h4><span class="product-tag">薄膜温室</span></div></div>
+                <div class="product-card reveal reveal-delay-3 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897454384-t69nyp.jpg" alt="那曲薄膜温室日光温室" loading="lazy"></div><div class="product-card-info"><h4>那曲薄膜温室日光温室 · 案例四</h4><span class="product-tag">薄膜温室</span></div></div>
+                <div class="product-card reveal visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897700506-x8wuo7.jpg" alt="那曲薄膜温室日光温室" loading="lazy"></div><div class="product-card-info"><h4>那曲薄膜温室日光温室 · 案例五</h4><span class="product-tag">薄膜温室</span></div></div>
+                <div class="product-card reveal reveal-delay-1 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897533515-klj8jq.jpg" alt="那曲薄膜温室日光温室" loading="lazy"></div><div class="product-card-info"><h4>那曲薄膜温室日光温室 · 案例六</h4><span class="product-tag">薄膜温室</span></div></div>
+                <div class="product-card reveal reveal-delay-2 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897664708-w3ti9z.jpg" alt="那曲薄膜温室日光温室" loading="lazy"></div><div class="product-card-info"><h4>那曲薄膜温室日光温室 · 案例七</h4><span class="product-tag">薄膜温室</span></div></div>
+                <div class="product-card reveal reveal-delay-3 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897445630-cco5ak.jpg" alt="那曲薄膜温室日光温室" loading="lazy"></div><div class="product-card-info"><h4>那曲薄膜温室日光温室 · 案例八</h4><span class="product-tag">薄膜温室</span></div></div>
             </div>
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23e0f7fa'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='24' fill='%23006495' font-family='sans-serif'%3E特色农产品%3C/text%3E%3C/svg%3E" alt="特色农产品" loading="lazy">
-                    <span class="product-tag">推荐</span>
-                </div>
-                <div class="product-info">
-                    <h4>特色农产品</h4>
-                    <p>地方特色，品质优良，原生态种植</p>
-                    <span class="price">¥36.00起</span>
-                </div>
+        </div>
+
+        <!-- 智能温室 -->
+        <div class="product-panel active" id="panel-smart">
+            <div class="product-grid">
+                <div class="product-card reveal visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787901316974-hqlwag.jpg" alt="那曲智能温室" loading="lazy"></div><div class="product-card-info"><h4>那曲智能温室 · 精品案例一</h4><span class="product-tag">智能温室</span></div></div>
+                <div class="product-card reveal reveal-delay-1 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897967027-dx9fo0.jpg" alt="那曲智能温室" loading="lazy"></div><div class="product-card-info"><h4>那曲智能温室 · 精品案例二</h4><span class="product-tag">智能温室</span></div></div>
+                <div class="product-card reveal reveal-delay-2 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787901381572-bwxhz1.jpg" alt="那曲智能温室" loading="lazy"></div><div class="product-card-info"><h4>那曲智能温室 · 精品案例三</h4><span class="product-tag">智能温室</span></div></div>
+                <div class="product-card reveal reveal-delay-3 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787901305625-grza3p.jpg" alt="那曲智能温室" loading="lazy"></div><div class="product-card-info"><h4>那曲智能温室 · 精品案例四</h4><span class="product-tag">智能温室</span></div></div>
+                <div class="product-card reveal visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787901296583-bs8uxs.jpg" alt="那曲智能温室" loading="lazy"></div><div class="product-card-info"><h4>那曲智能温室 · 精品案例五</h4><span class="product-tag">智能温室</span></div></div>
+                <div class="product-card reveal reveal-delay-1 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897967091-qvfs7g.jpg" alt="那曲智能温室" loading="lazy"></div><div class="product-card-info"><h4>那曲智能温室 · 精品案例六</h4><span class="product-tag">智能温室</span></div></div>
+                <div class="product-card reveal reveal-delay-2 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787901360994-w6uk4t.jpg" alt="那曲智能温室" loading="lazy"></div><div class="product-card-info"><h4>那曲智能温室 · 精品案例七</h4><span class="product-tag">智能温室</span></div></div>
+                <div class="product-card reveal reveal-delay-3 visible"><div class="product-card-img"><img src="https://soguagua.oss-cn-shanghai.aliyuncs.com/siteimg/260828/1787897967137-hvf3ty.jpg" alt="那曲智能温室" loading="lazy"></div><div class="product-card-info"><h4>那曲智能温室 · 精品案例八</h4><span class="product-tag">智能温室</span></div></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 数据统计 -->
-<section class="stats-section" id="stats">
+<!-- ==================== ADVANTAGES ==================== -->
+<section class="section advantages-section" id="advantages">
     <div class="container">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <div class="stat-number" data-count="15">0</div>
-                <div class="stat-label">年行业经验</div>
+        <div class="section-divider reveal visible"></div>
+        <h2 class="section-title reveal visible">服务优势</h2>
+        <p class="section-subtitle reveal reveal-delay-1 visible">全产业链一站式服务，为现代农业保驾护航</p>
+        <div class="advantages-grid">
+            <div class="advantage-card reveal visible">
+                <div class="advantage-icon">🏗️</div>
+                <h4>源头供货</h4>
+                <p>自产自营模式，省去中间商环节，严格把控原材料品质，有效控制项目成本，保障性价比。</p>
             </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="2000">0</div>
-                <div class="stat-label">亩种植基地</div>
+            <div class="advantage-card reveal reveal-delay-1 visible">
+                <div class="advantage-icon">🛡️</div>
+                <h4>匠心品质</h4>
+                <p>精密工艺加工温室骨架，防腐防锈、结构稳固、承载力强、使用寿命久，严格把控每道工序。</p>
             </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="500">0</div>
-                <div class="stat-label">合作客户</div>
+            <div class="advantage-card reveal reveal-delay-2 visible">
+                <div class="advantage-icon">🎯</div>
+                <h4>专属定制</h4>
+                <p>根据场地地形、当地气候、种植品类，一对一定制专属温室方案，拒绝同质化设计。</p>
             </div>
-            <div class="stat-item">
-                <div class="stat-number" data-count="98">0</div>
-                <div class="stat-label">客户满意度%</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 服务项目 -->
-<section class="services-section" id="services">
-    <div class="container">
-        <div class="section-title">
-            <span class="subtitle">Our Services</span>
-            <h2>服务项目</h2>
-            <div class="title-line"></div>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">🌱</div>
-                <h4>种植技术服务</h4>
-                <p>提供专业的种植技术指导，包括土壤改良、品种选择、病虫害防治等全方位技术支持。</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🚜</div>
-                <h4>农业机械服务</h4>
-                <p>提供现代化农业机械租赁与作业服务，提高农业生产效率，降低劳动成本。</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">📦</div>
-                <h4>农产品供应链</h4>
-                <p>建立完善的农产品供应链体系，从种植到销售全程把控，确保产品品质与安全。</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🔬</div>
-                <h4>农业科技研发</h4>
-                <p>与多家科研机构合作，进行农业新技术、新品种的研发与推广。</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">💼</div>
-                <h4>农业项目咨询</h4>
-                <p>为农业企业及个人提供项目规划、投资分析、市场评估等专业咨询服务。</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🌾</div>
-                <h4>生态农业规划</h4>
-                <p>提供生态农业园区规划设计服务，打造绿色、可持续的现代农业发展模式。</p>
+            <div class="advantage-card reveal reveal-delay-3 visible">
+                <div class="advantage-icon">🤝</div>
+                <h4>一站式服务</h4>
+                <p>从勘测、设计、生产、施工到后期运维，提供全流程交钥匙服务，贴心售后有保障。</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 联系我们 -->
-<section class="contact-section" id="contact">
-    <div class="container">
-        <div class="section-title">
-            <span class="subtitle">Contact Us</span>
-            <h2>联系我们</h2>
-            <div class="title-line"></div>
-        </div>
-        <div class="contact-grid">
-            <div class="contact-info-cards">
-                <div class="contact-card">
-                    <div class="contact-icon">📞</div>
-                    <div class="contact-detail">
-                        <h4>联系电话</h4>
-                        <p><a href="tel:15298311630">15298311630</a></p>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <div class="contact-detail">
-                        <h4>电子邮箱</h4>
-                        <p><a href="mailto:kuonong@163.com">kuonong@163.com</a></p>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">📍</div>
-                    <div class="contact-detail">
-                        <h4>公司地址</h4>
-                        <p>江苏省宿迁市</p>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">🕐</div>
-                    <div class="contact-detail">
-                        <h4>工作时间</h4>
-                        <p>周一至周日 8:00 - 18:00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-form">
-                <h3>在线留言</h3>
-                <form id="contactForm" onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <label for="name">您的姓名</label>
-                        <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">联系电话</label>
-                        <input type="tel" id="phone" name="phone" placeholder="请输入您的联系电话" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">留言内容</label>
-                        <textarea id="message" name="message" placeholder="请输入您的留言内容..." required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">提交留言</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 页脚 -->
+<!-- ==================== FOOTER ==================== -->
 <footer class="footer" id="footer">
     <div class="container">
         <div class="footer-grid">
-            <div class="footer-about">
-                <h3>阔农农业科技</h3>
-                <p>阔农农业科技有限公司是一家专注于现代农业科技研发、农产品种植与销售的综合性企业。我们始终坚持绿色生态理念，致力于为消费者提供最优质的农产品和专业的农业技术服务。</p>
-            </div>
-            <div class="footer-links">
-                <h4>快速导航</h4>
-                <ul>
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#about">关于我们</a></li>
-                    <li><a href="#products">产品展示</a></li>
-                    <li><a href="#services">服务项目</a></li>
-                    <li><a href="#contact">联系我们</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>产品分类</h4>
-                <ul>
-                    <li><a href="#products">有机蔬菜</a></li>
-                    <li><a href="#products">优质水果</a></li>
-                    <li><a href="#products">五谷杂粮</a></li>
-                    <li><a href="#products">特色农产品</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>联系方式</h4>
-                <p>📞 电话：15298311630</p>
-                <p>📧 邮箱：kuonong@163.com</p>
-                <p>📍 地址：江苏省宿迁市</p>
-                <p>🕐 工作时间：8:00 - 18:00</p>
+            <div class="footer-brand">
+                <h3>阔农温室工程厂家</h3>
+                <p>专注打造高品质、智能化、耐用型温室工程。自产自营，全产业链服务，为现代农业提供高效、稳定、高产的现代化种植设施。</p>
+                <p style="margin-top:12px;font-size:1rem;color:#a8e6b0;font-weight:600;">咨询热线：15298311630</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 阔农农业科技有限公司 版权所有 | 联系电话：15298311630</p>
+            © 2026 阔农温室工程厂家 · 专注高品质温室工程 · 咨询热线 15298311630
         </div>
     </div>
 </footer>
 
-<!-- 回到顶部按钮 -->
-<button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+<!-- ==================== MOBILE CALL ==================== -->
+<a href="tel:15298311630" class="mobile-call-btn" aria-label="一键拨打电话">
+    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+</a>
 
 <script>
-    // 页面加载动画
-    window.addEventListener('load', function() {
-        const loader = document.getElementById('pageLoader');
-        setTimeout(function() {
-            loader.classList.add('hidden');
-            setTimeout(function() {
-                loader.style.display = 'none';
-            }, 500);
-        }, 400);
-    });
-
-    // 导航栏滚动效果
-    const navbar = document.getElementById('navbar');
-    const backToTop = document.getElementById('backToTop');
-
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-            backToTop.classList.add('visible');
-        } else {
-            navbar.classList.remove('scrolled');
-            backToTop.classList.remove('visible');
-        }
-    });
-
-    // 回到顶部
-    backToTop.addEventListener('click', function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // 汉堡菜单
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
-
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('open');
-    });
-
-    // 点击导航链接后关闭移动端菜单
-    navMenu.querySelectorAll('a').forEach(function(link) {
-        link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('open');
-        });
-    });
-
-    // 轮播图
-    const slides = document.querySelectorAll('.carousel-slide');
-    const dots = document.querySelectorAll('.carousel-dots .dot');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    let currentSlide = 0;
-    let autoPlayInterval;
-
-    function goToSlide(index) {
-        slides.forEach(function(slide, i) {
-            slide.classList.remove('active');
-            if (i === index) {
-                slide.classList.add('active');
-            }
-        });
-        dots.forEach(function(dot, i) {
-            dot.classList.remove('active');
-            if (i === index) {
-                dot.classList.add('active');
-            }
-        });
-        currentSlide = index;
-    }
-
-    function nextSlide() {
-        goToSlide((currentSlide + 1) % slides.length);
-    }
-
-    function prevSlide() {
-        goToSlide((currentSlide - 1 + slides.length) % slides.length);
-    }
-
-    prevBtn.addEventListener('click', function() {
-        prevSlide();
-        resetAutoPlay();
-    });
-
-    nextBtn.addEventListener('click', function() {
-        nextSlide();
-        resetAutoPlay();
-    });
-
-    dots.forEach(function(dot) {
-        dot.addEventListener('click', function() {
-            goToSlide(parseInt(dot.getAttribute('data-index')));
-            resetAutoPlay();
-        });
-    });
-
-    function startAutoPlay() {
-        autoPlayInterval = setInterval(nextSlide, 5000);
-    }
-
-    function resetAutoPlay() {
-        clearInterval(autoPlayInterval);
-        startAutoPlay();
-    }
-
-    // 触摸滑动支持
-    let touchStartX = 0;
-    const carousel = document.getElementById('heroCarousel');
-
-    carousel.addEventListener('touchstart', function(e) {
-        touchStartX = e.touches[0].clientX;
-    }, { passive: true });
-
-    carousel.addEventListener('touchend', function(e) {
-        const touchEndX = e.changedTouches[0].clientX;
-        const diff = touchStartX - touchEndX;
-        if (Math.abs(diff) > 50) {
-            if (diff > 0) {
-                nextSlide();
+    (function() {
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
             } else {
-                prevSlide();
+                header.classList.remove('scrolled');
             }
-            resetAutoPlay();
-        }
-    }, { passive: true });
-
-    startAutoPlay();
-
-    // 数字统计动画
-    const statNumbers = document.querySelectorAll('.stat-number');
-    let statsAnimated = false;
-
-    function animateStats() {
-        if (statsAnimated) return;
-        const statsSection = document.getElementById('stats');
-        const rect = statsSection.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-            statsAnimated = true;
-            statNumbers.forEach(function(el) {
-                const target = parseInt(el.getAttribute('data-count'));
-                const duration = 2000;
-                const startTime = performance.now();
-                const suffix = el.getAttribute('data-count') === '98' ? '%' : '+';
-
-                function updateCount(currentTime) {
-                    const elapsed = currentTime - startTime;
-                    const progress = Math.min(elapsed / duration, 1);
-                    const eased = 1 - Math.pow(1 - progress, 3);
-                    const current = Math.round(target * eased);
-                    if (target === 98) {
-                        el.textContent = current;
-                    } else {
-                        el.textContent = current + '+';
-                    }
-                    if (progress < 1) {
-                        requestAnimationFrame(updateCount);
-                    } else {
-                        if (target === 98) {
-                            el.textContent = target + '%';
-                        } else {
-                            el.textContent = target + '+';
-                        }
-                    }
-                }
-                requestAnimationFrame(updateCount);
-            });
-        }
-    }
-
-    window.addEventListener('scroll', animateStats);
-    animateStats(); // 初始检查
-
-    // 表单提交处理
-    function handleSubmit(event) {
-        event.preventDefault();
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const message = document.getElementById('message').value;
-
-        // 在这里可以添加实际提交逻辑
-        alert('感谢您的留言！\n\n姓名：' + name + '\n电话：' + phone + '\n留言：' + message +
-            '\n\n我们会尽快与您联系，请保持电话畅通。\n联系电话：15298311630');
-        document.getElementById('contactForm').reset();
-    }
-
-    // 产品卡片点击效果
-    document.querySelectorAll('.product-card').forEach(function(card) {
-        card.addEventListener('click', function() {
-            const productName = card.querySelector('h4').textContent;
-            alert('您正在查看：' + productName + '\n\n如需购买或咨询，请拨打：15298311630');
         });
-    });
 
-    // 平滑滚动到锚点
-    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href !== '#') {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 70;
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('open');
+        });
+        navMenu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('open');
+            });
+        });
+
+        // Product tabs
+        const tabs = document.querySelectorAll('.product-tab');
+        const panels = document.querySelectorAll('.product-panel');
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                const targetId = tab.getAttribute('data-target');
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                tab.classList.add('active');
+                panels.forEach(function(p) {
+                    p.classList.remove('active');
+                    if (p.id === targetId) {
+                        p.classList.add('active');
+                    }
+                });
+                // Re-trigger reveal for newly visible cards
+                const activePanel = document.getElementById(targetId);
+                if (activePanel) {
+                    const cards = activePanel.querySelectorAll('.reveal');
+                    cards.forEach(function(card, index) {
+                        card.classList.remove('visible');
+                        setTimeout(function() {
+                            card.classList.add('visible');
+                        }, 50 + index * 60);
                     });
                 }
+            });
+        });
+
+        // Scroll reveal with Intersection Observer
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -40px 0px'
+        });
+        revealEls.forEach(function(el) {
+            observer.observe(el);
+        });
+
+        // Ensure initially visible panels have reveal triggered
+        document.querySelectorAll('.product-panel.active .reveal').forEach(function(el) {
+            if (el.getBoundingClientRect().top < window.innerHeight) {
+                el.classList.add('visible');
             }
         });
-    });
+
+        // Nav link active state on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        window.addEventListener('scroll', function() {
+            let current = '';
+            sections.forEach(function(section) {
+                const top = section.offsetTop - 100;
+                if (window.scrollY >= top) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(function(link) {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    })();
 </script>
-</body>
-</html>
+
+<!-- === MESSAGE_POPUP_HTML_START === -->
+<style>
+    .service-popup {
+        font-family: "Microsoft Yahei", sans-serif;
+        position: fixed !important;
+        right: 20px !important;
+        bottom: 20px !important;
+        left: auto !important;
+        top: auto !important;
+        width: 360px;
+        max-width: calc(100vw - 40px);
+        box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+        border-radius: 6px;
+        overflow: hidden;
+        background: #fff;
+        z-index: 2147483646 !important;
+        transition: all 0.3s ease;
+    }
+    .service-popup.mini_zhurutanchuang {
+        width: 120px;
+        height: 40px;
+        cursor: pointer;
+    }
+    .service-popup .popup-header {
+        background: #222;
+        color: #fff;
+        padding: 8px 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .service-popup.mini_zhurutanchuang .popup-header {
+        height: 100%;
+    }
+    .service-popup .header-title {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .service-popup .mini_zhurutanchuang-btn {
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        padding: 0 6px;
+    }
+    .service-popup .popup-body {
+        padding: 16px;
+        display: block;
+    }
+    .service-popup.mini_zhurutanchuang .popup-body {
+        display: none;
+    }
+    .service-popup .company-name {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 12px;
+        line-height: 1.3;
+    }
+    .service-popup .online-tip {
+        color: #888;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .service-popup .contact-item {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .service-popup .contact-label {
+        font-weight: bold;
+    }
+    .service-popup .tel-text {
+        color: red;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .service-popup .tip-text {
+        font-size: 18px;
+        margin: 20px 0 12px;
+    }
+    .service-popup .popup-input {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }
+    .service-popup .submit-btn {
+        width: 100%;
+        padding: 14px;
+        background: red;
+        color: #fff;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 8px;
+        cursor: pointer;
+    }
+    .service-popup .submit-btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+    .service-popup .submit-tip {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #888;
+        min-height: 20px;
+    }
+    .service-popup .submit-tip.ok { color: #1a6d3f; }
+    .service-popup .submit-tip.err { color: #c00; }
+</style>
+<div class="service-popup" data-oid="14866" data-api-base="http://47.116.56.63:3000/api" data-type="fastTrack" id="servicePop">
+    <div class="popup-header">
+        <div class="header-title">在线留言</div>
+        <button type="button" class="mini_zhurutanchuang-btn" id="mini_zhurutanchuangBtn">−</button>
+    </div>
+    <div class="popup-body">
+        <div class="company-name">阔农温室工程(服务新疆那曲)</div>
+        <div class="online-tip" id="onlineTip">分钟前在线</div>
+        <div class="contact-item">
+            <span class="contact-label">联系人：</span>张总
+        </div>
+        <div class="contact-item">
+            <span class="contact-label">移动电话：</span>
+            <span class="tel-text">15298311630</span>
+        </div>
+        <div class="tip-text">请留下您的联系方式，我马上给您打过来！</div>
+        <input type="text" class="popup-input" id="inquiryContent" placeholder="请填写您要咨询的产品或者留言">
+        <input type="tel" class="popup-input" id="inquiryContact" maxlength="11" placeholder="请输入您的手机号码">
+        <button type="button" class="submit-btn" id="inquirySubmit">提交</button>
+        <div class="submit-tip" id="inquiryTip"></div>
+    </div>
+</div>
+<script>
+    (function () {
+        var popBox = document.getElementById('servicePop');
+        if (!popBox) return;
+
+        // 脱离模板内部 transform/filter 等包含块，避免 fixed 变成相对整页定位
+        try {
+            (document.documentElement || document.body).appendChild(popBox);
+        } catch (e) {}
+
+        popBox.style.setProperty('position', 'fixed', 'important');
+        popBox.style.setProperty('right', '20px', 'important');
+        popBox.style.setProperty('bottom', '70px', 'important');
+        popBox.style.setProperty('left', 'auto', 'important');
+        popBox.style.setProperty('top', 'auto', 'important');
+        popBox.style.setProperty('z-index', '2147483646', 'important');
+
+        var mini_zhurutanchuangBtn = document.getElementById('mini_zhurutanchuangBtn');
+        var onlineTip = document.getElementById('onlineTip');
+        var contentInput = document.getElementById('inquiryContent');
+        var contactInput = document.getElementById('inquiryContact');
+        var submitBtn = document.getElementById('inquirySubmit');
+        var tipEl = document.getElementById('inquiryTip');
+
+        if (onlineTip) {
+            var mins = Math.floor(Math.random() * 10) + 1;
+            onlineTip.textContent = mins + '分钟前在线';
+        }
+
+        if (mini_zhurutanchuangBtn && popBox) {
+            mini_zhurutanchuangBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                popBox.classList.toggle('mini_zhurutanchuang');
+                mini_zhurutanchuangBtn.textContent = popBox.classList.contains('mini_zhurutanchuang') ? '+' : '−';
+            });
+            popBox.addEventListener('click', function () {
+                if (popBox.classList.contains('mini_zhurutanchuang')) {
+                    popBox.classList.remove('mini_zhurutanchuang');
+                    mini_zhurutanchuangBtn.textContent = '−';
+                }
+            });
+        }
+
+        function setTip(text, type) {
+            if (!tipEl) return;
+            tipEl.textContent = text || '';
+            tipEl.className = 'submit-tip' + (type ? ' ' + type : '');
+        }
+
+        if (submitBtn && popBox) {
+            submitBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var oid = popBox.getAttribute('data-oid') || '';
+                var apiBase = (popBox.getAttribute('data-api-base') || '').replace(/\/$/, '');
+                var inquiryType = popBox.getAttribute('data-type') || 'fastTrack';
+                var content = (contentInput && contentInput.value || '').trim();
+                var contact = (contactInput && contactInput.value || '').trim();
+
+                if (!oid) {
+                    setTip('提交失败：缺少客户信息', 'err');
+                    return;
+                }
+                if (!content) {
+                    setTip('请填写留言内容', 'err');
+                    return;
+                }
+                if (content.length < 5) {
+                    setTip('留言内容不能少于5个字', 'err');
+                    return;
+                }
+                if (/^\d+$/.test(content)) {
+                    setTip('留言内容不能为无意义数字', 'err');
+                    return;
+                }
+                if (content.indexOf('中共') !== -1 || content.indexOf('共产党') !== -1) {
+                    setTip('留言内容包含敏感词，请修改后提交', 'err');
+                    return;
+                }
+                if (!contact) {
+                    setTip('请填写手机号码', 'err');
+                    return;
+                }
+                if (!/^1[3-9]\d{9}$/.test(contact)) {
+                    setTip('请填写正确的手机号码', 'err');
+                    return;
+                }
+                if (!apiBase) {
+                    setTip('提交失败', 'err');
+                    return;
+                }
+
+                submitBtn.disabled = true;
+                setTip('提交中...', '');
+
+                fetch(apiBase + '/inquiries', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        oid: oid,
+                        type: inquiryType,
+                        contact: contact,
+                        content: content,
+                        sourceUrl: location.href
+                    })
+                })
+                    .then(function (res) { return res.json(); })
+                    .then(function (data) {
+                        if (data && data.code === 200) {
+                            setTip('提交成功，我们会尽快联系您', 'ok');
+                            if (contentInput) contentInput.value = '';
+                            if (contactInput) contactInput.value = '';
+                        } else {
+                            setTip((data && data.message) || '提交失败', 'err');
+                        }
+                    })
+                    .catch(function () {
+                        setTip('网络异常，请稍后重试', 'err');
+                    })
+                    .then(function () {
+                        submitBtn.disabled = false;
+                    });
+            });
+        }
+    })();
+</script>
+<!-- === MESSAGE_POPUP_HTML_END === -->
+<style id="contactFloatStyle">
+    #contactFloatWidget {
+        position: fixed;
+        left: 14px;
+        top: 140px;
+        z-index: 9999;
+        font-family: inherit;
+    }
+    #contactFloatWidget a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 56px;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: .5px;
+        text-decoration: none;
+        background: var(--brand, #ff6d00);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, .12);
+        cursor: pointer;
+    }
+    #contactFloatWidget a:hover {
+        filter: brightness(.98);
+    }
+    @media (max-width:760px) {
+        #contactFloatWidget {
+            left: auto;
+            top: auto;
+            right: 12px;
+            bottom: 72px;
+        }
+        #contactFloatWidget a {
+            width: auto;
+            min-width: 88px;
+            height: 38px;
+            padding: 0 12px;
+            border-radius: 999px;
+            font-size: 13px;
+            box-shadow: 0 10px 24px rgba(15, 76, 117, .22);
+        }
+    }
+</style>
+<div id="contactFloatWidget"><a href="#" data-promo-open role="button">我也要推广</a></div>
+<!-- === PROMOTION_POPUP_HTML_START === -->
+<style>
+    .yy-promo-mask {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 2147483645;
+        background: rgba(15, 23, 42, .45);
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    .yy-promo-mask.is-open { display: flex; }
+    .yy-promo-modal {
+        width: 100%;
+        max-width: 440px;
+        max-height: calc(100vh - 32px);
+        overflow: auto;
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 20px 50px rgba(15, 23, 42, .22);
+        font-family: "Microsoft YaHei", sans-serif;
+    }
+    .yy-promo-modal .promo-hd {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 18px;
+        border-bottom: 1px solid #e7edf4;
+    }
+    .yy-promo-modal .promo-hd h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 800;
+        color: #132033;
+    }
+    .yy-promo-modal .promo-close {
+        border: none;
+        background: transparent;
+        font-size: 22px;
+        line-height: 1;
+        color: #64748b;
+        cursor: pointer;
+        padding: 0 4px;
+    }
+    .yy-promo-modal .promo-bd {
+        padding: 18px;
+    }
+    .yy-promo-modal .promo-row {
+        margin-bottom: 14px;
+    }
+    .yy-promo-modal .promo-row label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #132033;
+    }
+    .yy-promo-modal .promo-row label .req {
+        color: #c0392b;
+        margin-left: 2px;
+    }
+    .yy-promo-modal .promo-row input,
+    .yy-promo-modal .promo-row select {
+        width: 100%;
+        height: 42px;
+        padding: 0 12px;
+        border: 1px solid #e7edf4;
+        border-radius: 10px;
+        background: #fff;
+        color: #132033;
+        font-size: 15px;
+        outline: none;
+        box-sizing: border-box;
+    }
+    .yy-promo-modal .promo-row input:focus,
+    .yy-promo-modal .promo-row select:focus {
+        border-color: #0f4c75;
+        box-shadow: 0 0 0 3px rgba(15, 76, 117, .12);
+    }
+    .yy-promo-modal .promo-submit {
+        width: 100%;
+        height: 44px;
+        margin-top: 4px;
+        border: none;
+        border-radius: 10px;
+        background: #0f4c75;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 800;
+        cursor: pointer;
+    }
+    .yy-promo-modal .promo-submit:disabled {
+        opacity: .6;
+        cursor: not-allowed;
+    }
+    .yy-promo-modal .promo-tip {
+        min-height: 20px;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #64748b;
+        text-align: center;
+    }
+    .yy-promo-modal .promo-tip.ok { color: #16a34a; }
+    .yy-promo-modal .promo-tip.err { color: #c0392b; }
+    .yy-promo-toast-wrap {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2147483647;
+        pointer-events: none;
+    }
+    .yy-promo-toast {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 180px;
+        max-width: 90vw;
+        padding: 11px 16px;
+        border-radius: 4px;
+        background: #f0f9eb;
+        border: 1px solid #e1f3d8;
+        color: #67c23a;
+        font-size: 14px;
+        line-height: 1.4;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, .1);
+        opacity: 0;
+        transform: translateY(-12px);
+        transition: opacity .25s ease, transform .25s ease;
+    }
+    .yy-promo-toast.is-show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .yy-promo-toast.err {
+        background: #fef0f0;
+        border-color: #fde2e2;
+        color: #f56c6c;
+    }
+    .yy-promo-toast-icon {
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 700;
+    }
+</style>
+<div id="yyPromoToastWrap" class="yy-promo-toast-wrap" aria-live="polite"></div>
+<div class="yy-promo-mask" id="yyPromoMask" data-oid="14866" data-api-base="http://47.116.56.63:3000/api">
+    <div class="yy-promo-modal" role="dialog" aria-modal="true" aria-labelledby="yyPromoTitle">
+        <div class="promo-hd">
+            <h3 id="yyPromoTitle">合作申请</h3>
+            <button type="button" class="promo-close" id="yyPromoClose" aria-label="关闭">×</button>
+        </div>
+        <div class="promo-bd" id="yyPromoForm">
+            <div class="promo-row">
+                <label for="yyPromoCompany">公司名称<span class="req">*</span></label>
+                <input type="text" id="yyPromoCompany" data-field="companyName" placeholder="请输入公司名称" maxlength="100" autocomplete="organization">
+            </div>
+            <div class="promo-row">
+                <label for="yyPromoContact">联系人<span class="req">*</span></label>
+                <input type="text" id="yyPromoContact" data-field="contact" placeholder="请输入联系人姓名" maxlength="50" autocomplete="name">
+            </div>
+            <div class="promo-row">
+                <label for="yyPromoPhone">手机号码<span class="req">*</span></label>
+                <input type="tel" id="yyPromoPhone" data-field="phone" placeholder="请输入手机号码" maxlength="11" autocomplete="tel">
+            </div>
+            <div class="promo-row">
+                <label for="yyPromoType">合作类型<span class="req">*</span></label>
+                <select id="yyPromoType" data-field="cooperateType">
+                    <option value="我要推广" selected>我要推广</option>
+                    <option value="我要加盟">我要加盟</option>
+                </select>
+            </div>
+            <button type="button" class="promo-submit" id="yyPromoSubmit" data-action="submit">提交</button>
+            <div class="promo-tip" id="yyPromoTip" data-field="tip"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function () {
+        var mask = document.getElementById('yyPromoMask');
+        if (!mask) return;
+
+        var toastWrap = document.getElementById('yyPromoToastWrap');
+
+        try {
+            (document.documentElement || document.body).appendChild(mask);
+            if (toastWrap) (document.documentElement || document.body).appendChild(toastWrap);
+        } catch (e) {}
+
+        var closeBtn = document.getElementById('yyPromoClose');
+        var companyInput = document.getElementById('yyPromoCompany');
+        var contactInput = document.getElementById('yyPromoContact');
+        var phoneInput = document.getElementById('yyPromoPhone');
+        var typeSelect = document.getElementById('yyPromoType');
+        var submitBtn = document.getElementById('yyPromoSubmit');
+        var tipEl = document.getElementById('yyPromoTip');
+        var toastTimer = null;
+
+        function setTip(text, type) {
+            if (!tipEl) return;
+            tipEl.textContent = text || '';
+            tipEl.className = 'promo-tip' + (type ? ' ' + type : '');
+        }
+
+        function showPromoToast(message, type) {
+            if (!toastWrap || !message) return;
+            if (toastTimer) {
+                clearTimeout(toastTimer);
+                toastTimer = null;
+            }
+            toastWrap.innerHTML = '';
+            var toast = document.createElement('div');
+            toast.className = 'yy-promo-toast' + (type === 'err' ? ' err' : '');
+            var icon = document.createElement('span');
+            icon.className = 'yy-promo-toast-icon';
+            icon.textContent = type === 'err' ? '×' : '✓';
+            var text = document.createElement('span');
+            text.textContent = message;
+            toast.appendChild(icon);
+            toast.appendChild(text);
+            toastWrap.appendChild(toast);
+            requestAnimationFrame(function () {
+                toast.classList.add('is-show');
+            });
+            toastTimer = setTimeout(function () {
+                toast.classList.remove('is-show');
+                toastTimer = setTimeout(function () {
+                    if (toast.parentNode) toast.parentNode.removeChild(toast);
+                }, 260);
+            }, 2800);
+        }
+
+        function openPromo() {
+            mask.classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+            setTip('', '');
+            if (companyInput) companyInput.focus();
+        }
+
+        function closePromo() {
+            mask.classList.remove('is-open');
+            document.body.style.overflow = '';
+        }
+
+        if (closeBtn) closeBtn.addEventListener('click', closePromo);
+        mask.addEventListener('click', function (e) {
+            if (e.target === mask) closePromo();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && mask.classList.contains('is-open')) closePromo();
+        });
+
+        document.querySelectorAll('#contactFloatWidget a, [data-promo-open]').forEach(function (el) {
+            el.addEventListener('click', function (e) {
+                e.preventDefault();
+                openPromo();
+            });
+        });
+
+        if (submitBtn) {
+            submitBtn.addEventListener('click', function () {
+                var oid = mask.getAttribute('data-oid') || '';
+                var apiBase = (mask.getAttribute('data-api-base') || '').replace(/\/$/, '');
+                var companyName = (companyInput && companyInput.value || '').trim();
+                var contact = (contactInput && contactInput.value || '').trim();
+                var phone = (phoneInput && phoneInput.value || '').trim();
+                var cooperateType = (typeSelect && typeSelect.value || '').trim() || '我要推广';
+
+                if (!oid) { setTip('提交失败：缺少客户信息', 'err'); return; }
+                if (!companyName) { setTip('请填写公司名称', 'err'); return; }
+                if (!contact) { setTip('请填写联系人', 'err'); return; }
+                if (!phone) { setTip('请填写手机号码', 'err'); return; }
+                if (!/^1[3-9]\d{9}$/.test(phone)) { setTip('请填写正确的手机号码', 'err'); return; }
+                if (!apiBase) { setTip('提交失败', 'err'); return; }
+
+                submitBtn.disabled = true;
+                setTip('提交中...', '');
+
+                fetch(apiBase + '/promotion-leads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        oid: oid,
+                        companyName: companyName,
+                        contact: contact,
+                        phone: phone,
+                        cooperateType: cooperateType,
+                        sourceUrl: location.href
+                    })
+                })
+                    .then(function (res) { return res.json(); })
+                    .then(function (data) {
+                        if (data && data.code === 200) {
+                            if (companyInput) companyInput.value = '';
+                            if (contactInput) contactInput.value = '';
+                            if (phoneInput) phoneInput.value = '';
+                            if (typeSelect) typeSelect.value = '我要推广';
+                            setTip('', '');
+                            closePromo();
+                            showPromoToast('提交成功，我们会尽快联系您');
+                        } else {
+                            setTip((data && data.message) || '提交失败', 'err');
+                        }
+                    })
+                    .catch(function () {
+                        setTip('网络异常，请稍后重试', 'err');
+                    })
+                    .then(function () {
+                        submitBtn.disabled = false;
+                    });
+            });
+        }
+    })();
+</script>
+<!-- === PROMOTION_POPUP_HTML_END === -->
+<!-- === COMPLIANCE_NOTICE_START === -->
+<style>
+    #yy-complaint-modal{display:none;position:fixed;inset:0;z-index:2147483645;font-family:"Microsoft YaHei",sans-serif;}
+    #yy-complaint-modal.open{display:block;}
+    #yy-complaint-modal .yy-cm-mask{position:absolute;inset:0;background:rgba(0,0,0,.45);}
+    #yy-complaint-modal .yy-cm-panel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(720px,92vw);max-height:86vh;background:#fff;border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,.18);display:flex;flex-direction:column;overflow:hidden;}
+    #yy-complaint-modal .yy-cm-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid #ebeef5;flex-shrink:0;}
+    #yy-complaint-modal .yy-cm-title{font-size:18px;font-weight:600;color:#303133;margin:0;}
+    #yy-complaint-modal .yy-cm-feedback-btn{border:1px solid #dcdfe6;background:#fff;color:#606266;font-size:13px;padding:4px 12px;border-radius:4px;cursor:pointer;}
+    #yy-complaint-modal .yy-cm-feedback-btn:hover{border-color:#c0c4cc;color:#303133;}
+    #yy-complaint-modal .yy-cm-body{padding:16px 20px;overflow:auto;flex:1;}
+    #yy-complaint-modal .yy-cm-label{font-size:14px;color:#303133;margin:0 0 12px;font-weight:500;}
+    #yy-complaint-modal .yy-cm-required{color:#f56c6c;margin-left:2px;}
+    #yy-complaint-modal .yy-cm-types{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 16px;margin-bottom:20px;}
+    #yy-complaint-modal .yy-complaint-radio{display:flex;align-items:flex-start;gap:6px;font-size:13px;color:#606266;cursor:pointer;line-height:1.4;}
+    #yy-complaint-modal .yy-complaint-radio input{margin-top:2px;flex-shrink:0;}
+    #yy-complaint-modal .yy-cm-desc-wrap{position:relative;}
+    #yy-complaint-modal .yy-cm-desc{width:100%;min-height:120px;padding:12px;border:1px solid #dcdfe6;border-radius:4px;background:#f5f7fa;font-size:14px;color:#303133;resize:vertical;box-sizing:border-box;font-family:inherit;}
+    #yy-complaint-modal .yy-cm-desc:focus{outline:none;border-color:#409eff;background:#fff;}
+    #yy-complaint-modal .yy-cm-counter{position:absolute;right:10px;bottom:8px;font-size:12px;color:#909399;}
+    #yy-complaint-modal .yy-cm-footer{padding:12px 20px 16px;display:flex;justify-content:flex-end;border-top:1px solid #ebeef5;flex-shrink:0;}
+    #yy-complaint-modal .yy-cm-submit{min-width:88px;padding:8px 20px;border:none;border-radius:4px;background:#c0c4cc;color:#fff;font-size:14px;cursor:not-allowed;}
+    #yy-complaint-modal .yy-cm-submit.enabled{background:#409eff;cursor:pointer;}
+    #yy-complaint-modal .yy-cm-submit.enabled:hover{background:#66b1ff;}
+    #yy-complaint-modal .yy-cm-tip{margin:8px 20px 0;font-size:13px;min-height:18px;}
+    #yy-complaint-modal .yy-cm-tip.ok{color:#67c23a;}
+    #yy-complaint-modal .yy-cm-tip.err{color:#f56c6c;}
+    #yy-complaint-modal .yy-cm-mine{display:none;}
+    #yy-complaint-modal.mine-view .yy-cm-form{display:none;}
+    #yy-complaint-modal.mine-view .yy-cm-mine{display:block;}
+    #yy-complaint-modal .yy-cm-mine-item{padding:12px 0;border-bottom:1px solid #ebeef5;font-size:13px;color:#606266;line-height:1.6;}
+    #yy-complaint-modal .yy-cm-mine-item:last-child{border-bottom:none;}
+    #yy-complaint-modal .yy-cm-mine-empty{color:#909399;padding:24px 0;text-align:center;}
+    @media (max-width:640px){#yy-complaint-modal .yy-cm-types{grid-template-columns:1fr;}}
+</style>
+<div id="yy-compliance-spacer" aria-hidden="true" style="width:100%;height:0;pointer-events:none;"></div>
+<div id="yy-compliance-notice" data-k="FAPUcBesDfiC/k78SO9opg==" data-p="KHP0A2PVYZ2/3COdOogByC4z71IpSYt9Z1D3Getfjj6a7Gjq8TChHylnqHXICtkz86dul40o6G0EG919aMBIQIiOMfq2S5d8ZF7JFep3iyaV63vW8S+IHy93qkPpCekJ8YVRlbkV6ks5GdpNrVX/T4e5M8uYRJ1dan7LGcd+jR6X7Gj88im7Hx5hq1LWCegB94NVlZAq6lksGM5brX3kQ4SLMsOCSo1fZ2PJG9xejTOS6kfK8BeCEBJbpnzNB9w5/Ld3n6sg62QuGeVlrmD4T5KRMvK/RLlVZkf+Gd1pjTWVI/tQ8TCAHQhfq3XFCdsO8odbmKcE630MGO5ErUH2SaiPMdaVSo9QZ1H3Gd1pjTWVI/tQ8TCAHQhfqWbMCcgh/aFMk5ct5VckGM15r0LhQq+4MM2CSLJZZH/hGtRmjB2v52nl8DqcERVQqWbMANQq/KxjlYsE5UwvGvdMrWblT5SZPM+QS5lNalHTGPBhjRyD6kfK8BeCEBJbpnzNCdo5/YNOl7YC5VYmEfJnrnPEQb+aMd2PSZFQZEv5Fc9gjRyD6kfK+BCBHSR8qH7gCuc3841kla075Gs4G8h5rnPhQq+4MM2CRLJlZE3b3GfPjBih5Unz8xOsHgNRoUDEB8cR86hflZof6GgTGNJQr0TxQqy9MvqySbROZHHeGPZ0jjqd5UH48BayHzZcrXzK0wmGfHGxFiqOZ5n0nz2fOoYY0i449lB+yDDa+4djnyeCGMp1aroEOsN9nezcbo88lgTDKSG3H3vDf8Khz3jLf4kOnWBmrAQ6yGib7YwviCGABpx6bLoVLM94ivGRPMY4gAHIYGamS3rNf5/rkGOQLYkcnCBzrEs1kutwExbofa5l/U67ijDIqUqHXW1Cz8BnjlaaO3Pq" style="box-sizing:border-box;position:fixed;left:0;right:0;bottom:0;z-index:9998;width:100%;margin:0;padding:10px 16px;background:#f5f7fa;color:#606266;font-family:'Microsoft YaHei',sans-serif;font-size:13px;line-height:1.8;text-align:center;display:none;"></div>
+<div id="yy-complaint-modal" data-oid="14866" data-api-base="http://47.116.56.63:3000/api">
+    <div class="yy-cm-mask" id="yy-cm-mask"></div>
+    <div class="yy-cm-panel" role="dialog" aria-modal="true" aria-labelledby="yy-cm-title">
+        <div class="yy-cm-header">
+            <h3 class="yy-cm-title" id="yy-cm-title">内容举报</h3>
+            <button type="button" class="yy-cm-feedback-btn" id="yy-cm-feedback-btn">我的反馈</button>
+        </div>
+        <div class="yy-cm-body">
+            <div class="yy-cm-form">
+                <div class="yy-cm-label">问题类型<span class="yy-cm-required">*</span></div>
+                <div class="yy-cm-types"><label class="yy-complaint-radio" for="yy-pt-0"><input type="radio" name="yy-problem-type" id="yy-pt-0" value="标题党" /><span>标题党</span></label><label class="yy-complaint-radio" for="yy-pt-1"><input type="radio" name="yy-problem-type" id="yy-pt-1" value="内容质量差/不完整" /><span>内容质量差/不完整</span></label><label class="yy-complaint-radio" for="yy-pt-2"><input type="radio" name="yy-problem-type" id="yy-pt-2" value="涉嫌抄袭" /><span>涉嫌抄袭</span></label><label class="yy-complaint-radio" for="yy-pt-3"><input type="radio" name="yy-problem-type" id="yy-pt-3" value="历史虚无主义" /><span>历史虚无主义</span></label><label class="yy-complaint-radio" for="yy-pt-4"><input type="radio" name="yy-problem-type" id="yy-pt-4" value="传播谣言信息、有害信息和虚假信息" /><span>传播谣言信息、有害信息和虚假信息</span></label><label class="yy-complaint-radio" for="yy-pt-5"><input type="radio" name="yy-problem-type" id="yy-pt-5" value="蹭炒热点、利用弱势群体博流量等违规盈利行为" /><span>蹭炒热点、利用弱势群体博流量等违规盈利行为</span></label><label class="yy-complaint-radio" for="yy-pt-6"><input type="radio" name="yy-problem-type" id="yy-pt-6" value="惊悚恐怖" /><span>惊悚恐怖</span></label><label class="yy-complaint-radio" for="yy-pt-7"><input type="radio" name="yy-problem-type" id="yy-pt-7" value="成都世运会违法不良信息" /><span>成都世运会违法不良信息</span></label><label class="yy-complaint-radio" for="yy-pt-8"><input type="radio" name="yy-problem-type" id="yy-pt-8" value="旧闻重发" /><span>旧闻重发</span></label><label class="yy-complaint-radio" for="yy-pt-9"><input type="radio" name="yy-problem-type" id="yy-pt-9" value="广告软文" /><span>广告软文</span></label><label class="yy-complaint-radio" for="yy-pt-10"><input type="radio" name="yy-problem-type" id="yy-pt-10" value="政治有害" /><span>政治有害</span></label><label class="yy-complaint-radio" for="yy-pt-11"><input type="radio" name="yy-problem-type" id="yy-pt-11" value="算法不良信息" /><span>算法不良信息</span></label><label class="yy-complaint-radio" for="yy-pt-12"><input type="radio" name="yy-problem-type" id="yy-pt-12" value="博彩诈骗" /><span>博彩诈骗</span></label><label class="yy-complaint-radio" for="yy-pt-13"><input type="radio" name="yy-problem-type" id="yy-pt-13" value="假冒仿冒官方机构、新闻媒体和特定人员" /><span>假冒仿冒官方机构、新闻媒体和特定人员</span></label><label class="yy-complaint-radio" for="yy-pt-14"><input type="radio" name="yy-problem-type" id="yy-pt-14" value="低俗色情" /><span>低俗色情</span></label><label class="yy-complaint-radio" for="yy-pt-15"><input type="radio" name="yy-problem-type" id="yy-pt-15" value="涉嫌侵权" /><span>涉嫌侵权</span></label><label class="yy-complaint-radio" for="yy-pt-16"><input type="radio" name="yy-problem-type" id="yy-pt-16" value="网络暴力" /><span>网络暴力</span></label><label class="yy-complaint-radio" for="yy-pt-17"><input type="radio" name="yy-problem-type" id="yy-pt-17" value="涉及未成年人的不良内容" /><span>涉及未成年人的不良内容</span></label><label class="yy-complaint-radio" for="yy-pt-18"><input type="radio" name="yy-problem-type" id="yy-pt-18" value="其他" /><span>其他</span></label><label class="yy-complaint-radio" for="yy-pt-19"><input type="radio" name="yy-problem-type" id="yy-pt-19" value="生活服务类不良信息" /><span>生活服务类不良信息</span></label></div>
+                <div class="yy-cm-label">问题描述</div>
+                <div class="yy-cm-desc-wrap">
+                    <textarea class="yy-cm-desc" id="yy-cm-desc" maxlength="300" placeholder="请描述你遇到的问题"></textarea>
+                    <span class="yy-cm-counter" id="yy-cm-counter">0/300</span>
+                </div>
+            </div>
+            <div class="yy-cm-mine" id="yy-cm-mine"></div>
+        </div>
+        <div class="yy-cm-tip" id="yy-cm-tip"></div>
+        <div class="yy-cm-footer">
+            <button type="button" class="yy-cm-submit" id="yy-cm-submit" disabled>提交</button>
+        </div>
+    </div>
+</div>
+<script>
+    (function () {
+        var bar = document.getElementById('yy-compliance-notice');
+        var spacer = document.getElementById('yy-compliance-spacer');
+        var modal = document.getElementById('yy-complaint-modal');
+        if (!bar) return;
+
+        function syncSpacer() {
+            if (spacer) spacer.style.height = bar.offsetHeight + 'px';
+        }
+
+        try {
+            var keyB64 = bar.getAttribute('data-k') || '';
+            var payloadB64 = bar.getAttribute('data-p') || '';
+            if (!keyB64 || !payloadB64) return;
+            var keyStr = atob(keyB64);
+            var payloadStr = atob(payloadB64);
+            var bytes = new Uint8Array(payloadStr.length);
+            for (var i = 0; i < payloadStr.length; i++) {
+                bytes[i] = payloadStr.charCodeAt(i) ^ keyStr.charCodeAt(i % keyStr.length);
+            }
+            var utf8 = typeof TextDecoder !== 'undefined'
+                ? new TextDecoder('utf-8').decode(bytes)
+                : decodeURIComponent(escape(String.fromCharCode.apply(null, bytes)));
+            bar.innerHTML = utf8;
+            bar.removeAttribute('data-k');
+            bar.removeAttribute('data-p');
+            bar.style.display = 'block';
+            syncSpacer();
+            window.addEventListener('resize', syncSpacer);
+        } catch (e) {}
+
+        if (!modal) return;
+        try {
+            (document.documentElement || document.body).appendChild(modal);
+        } catch (e2) {}
+
+        var mask = document.getElementById('yy-cm-mask');
+        var feedbackBtn = document.getElementById('yy-cm-feedback-btn');
+        var submitBtn = document.getElementById('yy-cm-submit');
+        var descInput = document.getElementById('yy-cm-desc');
+        var counter = document.getElementById('yy-cm-counter');
+        var tipEl = document.getElementById('yy-cm-tip');
+        var mineEl = document.getElementById('yy-cm-mine');
+        var titleEl = document.getElementById('yy-cm-title');
+        var footerEl = modal.querySelector('.yy-cm-footer');
+
+        function setTip(text, type) {
+            if (!tipEl) return;
+            tipEl.textContent = text || '';
+            tipEl.className = 'yy-cm-tip' + (type ? ' ' + type : '');
+        }
+
+        function selectedType() {
+            var checked = modal.querySelector('input[name="yy-problem-type"]:checked');
+            return checked ? checked.value : '';
+        }
+
+        function updateSubmitState() {
+            if (!submitBtn) return;
+            var ok = !!selectedType();
+            submitBtn.disabled = !ok;
+            if (ok) submitBtn.classList.add('enabled');
+            else submitBtn.classList.remove('enabled');
+        }
+
+        function openModal(mineView) {
+            modal.classList.add('open');
+            if (mineView) {
+                modal.classList.add('mine-view');
+                if (titleEl) titleEl.textContent = '我的反馈';
+                if (feedbackBtn) feedbackBtn.textContent = '去举报';
+                if (footerEl) footerEl.style.display = 'none';
+                loadMine();
+            } else {
+                modal.classList.remove('mine-view');
+                if (titleEl) titleEl.textContent = '内容举报';
+                if (feedbackBtn) feedbackBtn.textContent = '我的反馈';
+                if (footerEl) footerEl.style.display = 'flex';
+            }
+            setTip('', '');
+        }
+
+        function closeModal() {
+            modal.classList.remove('open');
+            modal.classList.remove('mine-view');
+        }
+
+        function formatTime(iso) {
+            try {
+                var d = new Date(iso);
+                if (isNaN(d.getTime())) return iso || '';
+                var pad = function (n) { return n < 10 ? '0' + n : '' + n; };
+                return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) +
+                    ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+            } catch (e3) { return iso || ''; }
+        }
+
+        function loadMine() {
+            if (!mineEl) return;
+            var oid = modal.getAttribute('data-oid') || '';
+            var apiBase = (modal.getAttribute('data-api-base') || '').replace(/\/$/, '');
+            mineEl.innerHTML = '<div class="yy-cm-mine-empty">加载中...</div>';
+            if (!oid || !apiBase) {
+                mineEl.innerHTML = '<div class="yy-cm-mine-empty">加载失败</div>';
+                return;
+            }
+            fetch(apiBase + '/complaints/mine?oid=' + encodeURIComponent(oid))
+                .then(function (res) { return res.json(); })
+                .then(function (data) {
+                    var list = (data && data.data && data.data.complaints) || [];
+                    if (!list.length) {
+                        mineEl.innerHTML = '<div class="yy-cm-mine-empty">暂无反馈记录</div>';
+                        return;
+                    }
+                    mineEl.innerHTML = list.map(function (item) {
+                        var desc = item.problemDescription
+                            ? '<div>' + String(item.problemDescription).replace(/</g, '&lt;') + '</div>'
+                            : '';
+                        return '<div class="yy-cm-mine-item"><div><strong>' +
+                            String(item.problemType || '').replace(/</g, '&lt;') +
+                            '</strong> · ' + formatTime(item.createdAt) +
+                            (item.handled ? ' · 已处理' : ' · 未处理') +
+                            '</div>' + desc + '</div>';
+                    }).join('');
+                })
+                .catch(function () {
+                    mineEl.innerHTML = '<div class="yy-cm-mine-empty">网络异常，请稍后重试</div>';
+                });
+        }
+
+        bar.addEventListener('click', function (e) {
+            var t = e.target;
+            if (t && t.id === 'yy-complaint-open') {
+                e.preventDefault();
+                openModal(false);
+            }
+        });
+
+        if (mask) mask.addEventListener('click', closeModal);
+
+        if (feedbackBtn) {
+            feedbackBtn.addEventListener('click', function () {
+                if (modal.classList.contains('mine-view')) openModal(false);
+                else openModal(true);
+            });
+        }
+
+        if (descInput && counter) {
+            descInput.addEventListener('input', function () {
+                counter.textContent = (descInput.value || '').length + '/300';
+            });
+        }
+
+        var radios = modal.querySelectorAll('input[name="yy-problem-type"]');
+        for (var r = 0; r < radios.length; r++) {
+            radios[r].addEventListener('change', updateSubmitState);
+        }
+        updateSubmitState();
+
+        if (submitBtn) {
+            submitBtn.addEventListener('click', function () {
+                if (submitBtn.disabled) return;
+                var oid = modal.getAttribute('data-oid') || '';
+                var apiBase = (modal.getAttribute('data-api-base') || '').replace(/\/$/, '');
+                var problemType = selectedType();
+                var problemDescription = (descInput && descInput.value || '').trim();
+                if (!oid) { setTip('提交失败：缺少客户信息', 'err'); return; }
+                if (!problemType) { setTip('请选择问题类型', 'err'); return; }
+                if (!apiBase) { setTip('提交失败', 'err'); return; }
+
+                submitBtn.disabled = true;
+                setTip('提交中...', '');
+                fetch(apiBase + '/complaints', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        oid: oid,
+                        problemType: problemType,
+                        problemDescription: problemDescription,
+                        sourceUrl: location.href
+                    })
+                })
+                    .then(function (res) { return res.json(); })
+                    .then(function (data) {
+                        if (data && data.code === 200) {
+                            setTip('提交成功，感谢您的反馈', 'ok');
+                            if (descInput) {
+                                descInput.value = '';
+                                if (counter) counter.textContent = '0/300';
+                            }
+                            var checked = modal.querySelector('input[name="yy-problem-type"]:checked');
+                            if (checked) checked.checked = false;
+                            updateSubmitState();
+                        } else {
+                            setTip((data && data.message) || '提交失败', 'err');
+                            updateSubmitState();
+                        }
+                    })
+                    .catch(function () {
+                        setTip('网络异常，请稍后重试', 'err');
+                        updateSubmitState();
+                    });
+            });
+        }
+    })();
+</script>
+<!-- === COMPLIANCE_NOTICE_END === -->
+</body></html>
