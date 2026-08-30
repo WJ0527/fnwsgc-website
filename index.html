@@ -3,365 +3,1584 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>西藏那曲智能温室厂家_那曲智能温室大棚/智慧农业种植温室/智慧温室厂家_阔农温室工程服务那曲色尼|嘉黎|比如|索县|巴青|聂荣|安多|申扎|班戈|尼玛|双湖</title>
-    <meta name="description" content="江苏阔农温室工程材料有限公司，专业从事建筑材料、工程物资供应，提供优质钢材、水泥、管材等工程材料。">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>阔农 - 专业农业科技服务</title>
+    <meta name="description" content="阔农 - 专业农业科技服务，提供优质农产品及农业解决方案。联系电话：15298311630">
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --primary-dark: #1b5e20;
+            --primary-light: #4caf50;
+            --accent: #ff8f00;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --text-white: #fff;
+            --bg-light: #f8f9fa;
+            --bg-white: #ffffff;
+            --bg-dark: #1a1a2e;
+            --border-color: #e0e0e0;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.16);
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 30px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--text-dark);
+            background: var(--bg-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* 加载动画 */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        .page-loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .loader-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #e0e0e0;
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* 顶部信息栏 */
+        .top-bar {
+            background: var(--primary-dark);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 13px;
+            padding: 8px 0;
+            position: relative;
+            z-index: 1001;
+        }
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .top-bar .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .top-bar .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .top-bar .contact-info svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .top-bar .top-links {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        .top-bar .top-links a {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            transition: color var(--transition);
+            font-size: 13px;
+        }
+        .top-bar .top-links a:hover {
+            color: #fff;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            background: #fff;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: box-shadow var(--transition);
+        }
+        .navbar.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            gap: 20px;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 2px;
+        }
+        .navbar .logo .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .navbar .logo span {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 4px;
+            align-items: center;
+        }
+        .nav-menu li a {
+            display: block;
+            padding: 10px 16px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: var(--radius-sm);
+            transition: all var(--transition);
+            position: relative;
+            white-space: nowrap;
+        }
+        .nav-menu li a::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            border-radius: 2px;
+            transition: width var(--transition);
+        }
+        .nav-menu li a:hover,
+        .nav-menu li a.active {
+            color: var(--primary);
+            background: rgba(76, 175, 80, 0.08);
+        }
+        .nav-menu li a:hover::after,
+        .nav-menu li a.active::after {
+            width: 60%;
+        }
+        .nav-cta {
+            background: var(--primary) !important;
+            color: #fff !important;
+            padding: 10px 20px !important;
+            border-radius: 30px !important;
+            font-weight: 600 !important;
+            transition: all var(--transition) !important;
+        }
+        .nav-cta::after {
+            display: none !important;
+        }
+        .nav-cta:hover {
+            background: var(--primary-dark) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            padding: 8px;
+            background: none;
+            border: none;
+            z-index: 1002;
+        }
+        .hamburger span {
+            width: 26px;
+            height: 3px;
+            background: var(--text-dark);
+            border-radius: 3px;
+            transition: all var(--transition);
+            display: block;
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* Hero轮播 */
+        .hero-carousel {
+            position: relative;
+            height: 520px;
+            overflow: hidden;
+            background: #1a1a2e;
+        }
+        .carousel-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .carousel-slide.active {
+            opacity: 1;
+        }
+        .carousel-slide .slide-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(0.55);
+        }
+        .carousel-slide .slide-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+            max-width: 800px;
+        }
+        .carousel-slide .slide-content h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 0.8s ease;
+        }
+        .carousel-slide .slide-content p {
+            font-size: 18px;
+            margin-bottom: 28px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease;
+        }
+        .carousel-slide .slide-content .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all var(--transition);
+            animation: fadeInUp 1.2s ease;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+        .carousel-slide .slide-content .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(46, 125, 50, 0.4);
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+            transition: all var(--transition);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .carousel-btn:hover {
+            background: rgba(255, 255, 255, 0.35);
+            transform: translateY(-50%) scale(1.08);
+        }
+        .carousel-btn.prev {
+            left: 20px;
+        }
+        .carousel-btn.next {
+            right: 20px;
+        }
+        .carousel-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 5;
+        }
+        .carousel-dots .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            border: none;
+            cursor: pointer;
+            transition: all var(--transition);
+        }
+        .carousel-dots .dot.active {
+            background: #fff;
+            width: 30px;
+            border-radius: 5px;
+        }
+
+        /* 通用容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 分区标题 */
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .section-title .subtitle {
+            display: inline-block;
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .section-title .title-line {
+            width: 60px;
+            height: 3px;
+            background: var(--primary);
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        /* 关于我们 */
+        .about-section {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .about-image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .about-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+        .about-image .exp-badge {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: #fff;
+            padding: 16px 22px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            font-weight: 700;
+            box-shadow: var(--shadow-md);
+        }
+        .about-image .exp-badge .number {
+            font-size: 28px;
+            display: block;
+        }
+        .about-content h3 {
+            font-size: 28px;
+            margin-bottom: 16px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        .about-content p {
+            color: var(--text-light);
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 24px;
+        }
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        .about-feature .check-icon {
+            width: 22px;
+            height: 22px;
+            background: rgba(76, 175, 80, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        /* 产品展示 */
+        .products-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition);
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+        .product-card .product-img {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        .product-card .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .product-card:hover .product-img img {
+            transform: scale(1.1);
+        }
+        .product-card .product-tag {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: var(--accent);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .product-card .product-info {
+            padding: 18px;
+        }
+        .product-card .product-info h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .product-card .product-info p {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+        .product-card .product-info .price {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        /* 服务项目 */
+        .services-section {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .service-card {
+            background: #fff;
+            padding: 32px 24px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition);
+            border: 1px solid transparent;
+        }
+        .service-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-light);
+            transform: translateY(-4px);
+        }
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(76, 175, 80, 0.2));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 30px;
+        }
+        .service-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .service-card p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* 数据统计 */
+        .stats-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: #fff;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .stat-item .stat-number {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+        .stat-item .stat-label {
+            font-size: 14px;
+            opacity: 0.85;
+            letter-spacing: 1px;
+        }
+
+        /* 联系我们 */
+        .contact-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .contact-info-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+            background: var(--bg-light);
+            border-radius: var(--radius-md);
+            transition: all var(--transition);
+        }
+        .contact-card:hover {
+            background: #fff;
+            box-shadow: var(--shadow-sm);
+        }
+        .contact-card .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        .contact-card .contact-detail h4 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .contact-card .contact-detail p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+        .contact-card .contact-detail a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+        .contact-card .contact-detail a:hover {
+            color: var(--primary);
+        }
+        .contact-form {
+            background: var(--bg-light);
+            padding: 32px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+        .contact-form h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .form-group {
+            margin-bottom: 16px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: var(--text-dark);
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            font-family: inherit;
+            transition: all var(--transition);
+            background: #fff;
+            outline: none;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition);
+            letter-spacing: 1px;
+            font-family: inherit;
+        }
+        .submit-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+        }
+
+        /* 页脚 */
+        .footer {
+            background: #1a1a2e;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 50px 0 20px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-about h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #fff;
+            font-weight: 700;
+        }
+        .footer-about p {
+            font-size: 13px;
+            line-height: 1.8;
+        }
+        .footer-links h4 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 14px;
+            font-weight: 600;
+        }
+        .footer-links ul {
+            list-style: none;
+        }
+        .footer-links ul li {
+            margin-bottom: 8px;
+        }
+        .footer-links ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 13px;
+            transition: color var(--transition);
+        }
+        .footer-links ul li a:hover {
+            color: #fff;
+        }
+        .footer-contact h4 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 14px;
+            font-weight: 600;
+        }
+        .footer-contact p {
+            font-size: 13px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 16px;
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .footer-bottom a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+        }
+
+        /* 回到顶部 */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 44px;
+            height: 44px;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition);
+            z-index: 999;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .products-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .top-bar .contact-info {
+                justify-content: center;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: #fff;
+                flex-direction: column;
+                padding: 80px 20px 20px;
+                box-shadow: var(--shadow-lg);
+                transition: right 0.4s ease;
+                z-index: 1001;
+                gap: 4px;
+                align-items: stretch;
+                overflow-y: auto;
+            }
+            .nav-menu.open {
+                right: 0;
+            }
+            .nav-menu li a {
+                padding: 14px 16px;
+                font-size: 16px;
+                text-align: center;
+            }
+            .nav-cta {
+                margin-top: 10px;
+                text-align: center;
+            }
+            .hero-carousel {
+                height: 400px;
+            }
+            .carousel-slide .slide-content h1 {
+                font-size: 28px;
+            }
+            .carousel-slide .slide-content p {
+                font-size: 15px;
+            }
+            .carousel-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 16px;
+            }
+            .carousel-btn.prev {
+                left: 10px;
+            }
+            .carousel-btn.next {
+                right: 10px;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .about-image img {
+                height: 280px;
+            }
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+            .product-card .product-img {
+                height: 150px;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .section-title h2 {
+                font-size: 28px;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+            .stat-item .stat-number {
+                font-size: 32px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .back-to-top {
+                bottom: 16px;
+                right: 16px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-carousel {
+                height: 350px;
+            }
+            .carousel-slide .slide-content h1 {
+                font-size: 22px;
+            }
+            .carousel-slide .slide-content p {
+                font-size: 14px;
+                margin-bottom: 18px;
+            }
+            .carousel-slide .slide-content .btn {
+                padding: 10px 24px;
+                font-size: 14px;
+            }
+            .contact-form {
+                padding: 20px;
+            }
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- 顶部通知栏 -->
-    <div class="top-bar">
-        <div class="container top-bar-inner">
-            <div class="top-bar-left">
-                <span><i class="fas fa-phone"></i> 15298311630</span>
-                <span><i class="fas fa-envelope"></i> info@gywsgc.com</span>
-                <span><i class="fas fa-map-marker-alt"></i> 江苏省宿迁市</span>
+
+<!-- 页面加载动画 -->
+<div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
+</div>
+
+<!-- 顶部信息栏 -->
+<div class="top-bar">
+    <div class="container">
+        <div class="contact-info">
+                <span>
+                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    15298311630
+                </span>
+            <span>
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    kuonong@163.com
+                </span>
+            <span>
+                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    江苏省宿迁市
+                </span>
+        </div>
+        <div class="top-links">
+            <a href="#contact">联系我们</a>
+            <a href="#products">产品中心</a>
+        </div>
+    </div>
+</div>
+
+<!-- 导航栏 -->
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <a href="#" class="logo">
+            <div class="logo-icon">阔</div>
+            <span>阔农</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="菜单">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#" class="active">首页</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#products">产品展示</a></li>
+            <li><a href="#services">服务项目</a></li>
+            <li><a href="#contact">联系我们</a></li>
+            <li><a href="tel:15298311630" class="nav-cta">立即咨询</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero 轮播 -->
+<section class="hero-carousel" id="heroCarousel">
+    <div class="carousel-slide active" data-index="0">
+        <div class="slide-bg" style="background-image: linear-gradient(135deg, #1a1a2e 0%, #2d4a2d 50%, #1a3a1a 100%);"></div>
+        <div class="slide-content">
+            <h1>阔农农业科技</h1>
+            <p>专注现代农业发展，提供优质农产品与专业技术服务</p>
+            <a href="#contact" class="btn">了解更多</a>
+        </div>
+    </div>
+    <div class="carousel-slide" data-index="1">
+        <div class="slide-bg" style="background-image: linear-gradient(135deg, #0d1f0d 0%, #1a3a2a 40%, #2d5a3d 100%);"></div>
+        <div class="slide-content">
+            <h1>绿色生态种植</h1>
+            <p>坚持绿色环保理念，打造健康安全农产品</p>
+            <a href="#products" class="btn">查看产品</a>
+        </div>
+    </div>
+    <div class="carousel-slide" data-index="2">
+        <div class="slide-bg" style="background-image: linear-gradient(135deg, #1a1a2e 0%, #2a3a4a 50%, #1a2a3a 100%);"></div>
+        <div class="slide-content">
+            <h1>专业农业服务</h1>
+            <p>提供全方位农业技术指导与解决方案</p>
+            <a href="#services" class="btn">服务项目</a>
+        </div>
+    </div>
+    <button class="carousel-btn prev" id="prevBtn" aria-label="上一张">❮</button>
+    <button class="carousel-btn next" id="nextBtn" aria-label="下一张">❯</button>
+    <div class="carousel-dots" id="carouselDots">
+        <button class="dot active" data-index="0" aria-label="第1张"></button>
+        <button class="dot" data-index="1" aria-label="第2张"></button>
+        <button class="dot" data-index="2" aria-label="第3张"></button>
+    </div>
+</section>
+
+<!-- 关于我们 -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="section-title">
+            <span class="subtitle">About Us</span>
+            <h2>关于阔农</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%232e7d32'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='48' fill='white' font-family='sans-serif'%3E阔农%3C/text%3E%3Ctext x='50%25' y='65%25' text-anchor='middle' font-size='18' fill='rgba(255,255,255,0.8)' font-family='sans-serif'%3E农业科技%3C/text%3E%3C/svg%3E" alt="阔农农业科技" loading="lazy">
+                <div class="exp-badge">
+                    <span class="number">15+</span>
+                    年行业经验
+                </div>
             </div>
-            <div class="top-bar-right">
-                <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
-                <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
-                <a href="#" aria-label="抖音"><i class="fab fa-tiktok"></i></a>
+            <div class="about-content">
+                <h3>致力于现代农业发展与创新</h3>
+                <p>阔农农业科技有限公司成立于2009年，是一家专注于现代农业科技研发、农产品种植与销售、农业技术服务于一体的综合性农业企业。公司秉承"绿色、健康、创新、共赢"的经营理念，致力于为消费者提供安全、优质的农产品。</p>
+                <p>公司拥有现代化种植基地2000余亩，引进先进的农业技术和管理模式，采用绿色生态种植方式，确保每一份产品的品质与安全。</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <span class="check-icon">✓</span> 绿色生态种植
+                    </div>
+                    <div class="about-feature">
+                        <span class="check-icon">✓</span> 专业技术团队
+                    </div>
+                    <div class="about-feature">
+                        <span class="check-icon">✓</span> 现代化管理
+                    </div>
+                    <div class="about-feature">
+                        <span class="check-icon">✓</span> 品质保证体系
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</section>
 
-    <!-- 导航栏 -->
-    <header class="header" id="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-building"></i>
+<!-- 产品展示 -->
+<section class="products-section" id="products">
+    <div class="container">
+        <div class="section-title">
+            <span class="subtitle">Our Products</span>
+            <h2>产品展示</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23e8f5e9'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='24' fill='%232e7d32' font-family='sans-serif'%3E有机蔬菜%3C/text%3E%3C/svg%3E" alt="有机蔬菜" loading="lazy">
+                    <span class="product-tag">热销</span>
                 </div>
-                <div class="logo-text">
-                    <h1>阔农温室工程材料</h1>
-                    <span>GUANGYUAN ENGINEERING</span>
+                <div class="product-info">
+                    <h4>有机蔬菜系列</h4>
+                    <p>绿色种植，新鲜直供，营养丰富</p>
+                    <span class="price">¥28.00起</span>
                 </div>
-            </a>
-            <nav class="nav-menu" id="navMenu">
-                <ul>
-                    <li><a href="index.html" class="active">首页</a></li>
-                    <li><a href="about.html">关于我们</a></li>
-                    <li><a href="products.html">产品中心</a></li>
-                    <li><a href="contact.html">联系我们</a></li>
-                </ul>
-            </nav>
-            <div class="nav-actions">
-                <a href="contact.html" class="btn btn-primary btn-quote">获取报价</a>
-                <button class="hamburger" id="hamburger" aria-label="菜单">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23fff3e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='24' fill='%23e65100' font-family='sans-serif'%3E优质水果%3C/text%3E%3C/svg%3E" alt="优质水果" loading="lazy">
+                    <span class="product-tag">新品</span>
+                </div>
+                <div class="product-info">
+                    <h4>优质水果系列</h4>
+                    <p>自然成熟，甜美多汁，产地直发</p>
+                    <span class="price">¥45.00起</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f3e5f5'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='24' fill='%236a1b9a' font-family='sans-serif'%3E五谷杂粮%3C/text%3E%3C/svg%3E" alt="五谷杂粮" loading="lazy">
+                    <span class="product-tag">精选</span>
+                </div>
+                <div class="product-info">
+                    <h4>五谷杂粮系列</h4>
+                    <p>传统种植，营养健康，粒粒精选</p>
+                    <span class="price">¥18.00起</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23e0f7fa'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='24' fill='%23006495' font-family='sans-serif'%3E特色农产品%3C/text%3E%3C/svg%3E" alt="特色农产品" loading="lazy">
+                    <span class="product-tag">推荐</span>
+                </div>
+                <div class="product-info">
+                    <h4>特色农产品</h4>
+                    <p>地方特色，品质优良，原生态种植</p>
+                    <span class="price">¥36.00起</span>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
+</section>
 
-    <!-- Hero 轮播区 -->
-    <section class="hero-slider" id="heroSlider">
-        <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1920/800?random=1');">
-            <div class="container slide-content">
-                <span class="slide-tag">专业建材供应商</span>
-                <h2>优质工程材料<br>助力城市建设</h2>
-                <p>专注钢材、水泥、管材等建筑材料供应20年，服务超过500个工程项目</p>
-                <div class="slide-buttons">
-                    <a href="products.html" class="btn btn-primary">查看产品</a>
-                    <a href="contact.html" class="btn btn-outline">联系我们</a>
-                </div>
-            </div>
-        </div>
-        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1920/800?random=2');">
-            <div class="container slide-content">
-                <span class="slide-tag">一站式采购服务</span>
-                <h2>全品类工程材料<br>一站式供应解决方案</h2>
-                <p>从原材料到成品，从采购到配送，为您提供全方位的材料供应服务</p>
-                <div class="slide-buttons">
-                    <a href="products.html" class="btn btn-primary">了解详情</a>
-                    <a href="about.html" class="btn btn-outline">公司介绍</a>
-                </div>
-            </div>
-        </div>
-        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1920/800?random=3');">
-            <div class="container slide-content">
-                <span class="slide-tag">品质保证</span>
-                <h2>严格质量把控<br>铸就精品工程</h2>
-                <p>所有产品均通过国家质量检测认证，与多家知名品牌建立长期合作</p>
-                <div class="slide-buttons">
-                    <a href="products.html" class="btn btn-primary">品质产品</a>
-                    <a href="contact.html" class="btn btn-outline">咨询合作</a>
-                </div>
-            </div>
-        </div>
-        <div class="slider-dots" id="sliderDots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-        </div>
-        <button class="slider-arrow prev" id="prevSlide" aria-label="上一张"><i class="fas fa-chevron-left"></i></button>
-        <button class="slider-arrow next" id="nextSlide" aria-label="下一张"><i class="fas fa-chevron-right"></i></button>
-    </section>
-
-    <!-- 核心优势 -->
-    <section class="features">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-medal"></i></div>
-                    <h3>品质保证</h3>
-                    <p>所有产品均通过ISO9001质量认证，厂家直供，质量可追溯</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-truck-fast"></i></div>
-                    <h3>快速配送</h3>
-                    <p>自有物流车队，覆盖珠三角地区，24小时内送达施工现场</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-handshake"></i></div>
-                    <h3>诚信经营</h3>
-                    <p>20年行业经验，500+合作客户，口碑见证实力</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
-                    <h3>专业服务</h3>
-                    <p>专业技术团队提供选材建议，售后无忧，全程跟进</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 关于我们简介 -->
-    <section class="about-preview">
-        <div class="container about-preview-grid">
-            <div class="about-preview-image">
-                <img src="https://picsum.photos/600/500?random=4" alt="公司简介" loading="lazy">
-                <div class="experience-badge">
-                    <span class="number">20</span>
-                    <span class="label">年行业经验</span>
-                </div>
-            </div>
-            <div class="about-preview-content">
-                <span class="section-tag">关于我们</span>
-                <h2>江苏阔农温室工程材料有限公司</h2>
-                <p class="about-desc">公司成立于2005年，位于江苏市，是一家专业从事建筑材料、工程物资供应与配送的综合性企业。主营产品涵盖钢材、水泥、管材、防水材料、装饰材料等多个品类。</p>
-                <ul class="about-list">
-                    <li><i class="fas fa-check-circle"></i> 年销售额突破2亿元</li>
-                    <li><i class="fas fa-check-circle"></i> 仓储面积超10000㎡</li>
-                    <li><i class="fas fa-check-circle"></i> 与30+知名品牌建立合作</li>
-                    <li><i class="fas fa-check-circle"></i> 服务覆盖珠三角及周边地区</li>
-                </ul>
-                <a href="about.html" class="btn btn-primary">了解更多</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 产品分类展示 -->
-    <section class="product-categories">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">产品中心</span>
-                <h2>主营产品分类</h2>
-                <p>全品类工程材料，满足您的一站式采购需求</p>
-            </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/400/300?random=5" alt="钢材类" loading="lazy">
-                        <span class="product-badge">热销</span>
-                    </div>
-                    <div class="product-info">
-                        <h3>钢材类</h3>
-                        <p>螺纹钢、线材、型钢、钢板等</p>
-                        <a href="products.html" class="product-link">查看详情 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/400/300?random=6" alt="水泥类" loading="lazy">
-                    </div>
-                    <div class="product-info">
-                        <h3>水泥类</h3>
-                        <p>普通硅酸盐水泥、特种水泥等</p>
-                        <a href="products.html" class="product-link">查看详情 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/400/300?random=7" alt="管材类" loading="lazy">
-                    </div>
-                    <div class="product-info">
-                        <h3>管材类</h3>
-                        <p>PVC管、PE管、钢管、铸铁管等</p>
-                        <a href="products.html" class="product-link">查看详情 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://picsum.photos/400/300?random=8" alt="防水材料" loading="lazy">
-                    </div>
-                    <div class="product-info">
-                        <h3>防水材料</h3>
-                        <p>防水卷材、防水涂料、密封材料等</p>
-                        <a href="products.html" class="product-link">查看详情 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 数据统计 -->
-    <section class="stats-section">
-        <div class="container stats-grid">
+<!-- 数据统计 -->
+<section class="stats-section" id="stats">
+    <div class="container">
+        <div class="stats-grid">
             <div class="stat-item">
-                <span class="stat-number" data-count="20">0</span>
-                <span class="stat-label">年经验</span>
+                <div class="stat-number" data-count="15">0</div>
+                <div class="stat-label">年行业经验</div>
             </div>
             <div class="stat-item">
-                <span class="stat-number" data-count="500">0</span>
-                <span class="stat-label">合作客户</span>
+                <div class="stat-number" data-count="2000">0</div>
+                <div class="stat-label">亩种植基地</div>
             </div>
             <div class="stat-item">
-                <span class="stat-number" data-count="10000">0</span>
-                <span class="stat-label">仓储面积(㎡)</span>
+                <div class="stat-number" data-count="500">0</div>
+                <div class="stat-label">合作客户</div>
             </div>
             <div class="stat-item">
-                <span class="stat-number" data-count="30">0</span>
-                <span class="stat-label">合作品牌</span>
+                <div class="stat-number" data-count="98">0</div>
+                <div class="stat-label">客户满意度%</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- 合作伙伴/品牌展示 -->
-    <section class="brands">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">合作品牌</span>
-                <h2>携手知名品牌 共赢未来</h2>
+<!-- 服务项目 -->
+<section class="services-section" id="services">
+    <div class="container">
+        <div class="section-title">
+            <span class="subtitle">Our Services</span>
+            <h2>服务项目</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🌱</div>
+                <h4>种植技术服务</h4>
+                <p>提供专业的种植技术指导，包括土壤改良、品种选择、病虫害防治等全方位技术支持。</p>
             </div>
-            <div class="brands-grid">
-                <div class="brand-item"><i class="fas fa-industry"></i> 韶钢</div>
-                <div class="brand-item"><i class="fas fa-industry"></i> 海螺水泥</div>
-                <div class="brand-item"><i class="fas fa-industry"></i> 联塑管道</div>
-                <div class="brand-item"><i class="fas fa-industry"></i> 科顺防水</div>
-                <div class="brand-item"><i class="fas fa-industry"></i> 宝武钢铁</div>
-                <div class="brand-item"><i class="fas fa-industry"></i> 华润水泥</div>
+            <div class="service-card">
+                <div class="service-icon">🚜</div>
+                <h4>农业机械服务</h4>
+                <p>提供现代化农业机械租赁与作业服务，提高农业生产效率，降低劳动成本。</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📦</div>
+                <h4>农产品供应链</h4>
+                <p>建立完善的农产品供应链体系，从种植到销售全程把控，确保产品品质与安全。</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔬</div>
+                <h4>农业科技研发</h4>
+                <p>与多家科研机构合作，进行农业新技术、新品种的研发与推广。</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💼</div>
+                <h4>农业项目咨询</h4>
+                <p>为农业企业及个人提供项目规划、投资分析、市场评估等专业咨询服务。</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌾</div>
+                <h4>生态农业规划</h4>
+                <p>提供生态农业园区规划设计服务，打造绿色、可持续的现代农业发展模式。</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- 新闻动态 -->
-    <section class="news-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">新闻动态</span>
-                <h2>公司最新资讯</h2>
+<!-- 联系我们 -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <span class="subtitle">Contact Us</span>
+            <h2>联系我们</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-detail">
+                        <h4>联系电话</h4>
+                        <p><a href="tel:15298311630">15298311630</a></p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-detail">
+                        <h4>电子邮箱</h4>
+                        <p><a href="mailto:kuonong@163.com">kuonong@163.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-detail">
+                        <h4>公司地址</h4>
+                        <p>江苏省宿迁市</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🕐</div>
+                    <div class="contact-detail">
+                        <h4>工作时间</h4>
+                        <p>周一至周日 8:00 - 18:00</p>
+                    </div>
+                </div>
             </div>
-            <div class="news-grid">
-                <div class="news-card">
-                    <div class="news-date">
-                        <span class="day">15</span>
-                        <span class="month">2024.06</span>
+            <div class="contact-form">
+                <h3>在线留言</h3>
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">您的姓名</label>
+                        <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
                     </div>
-                    <div class="news-content">
-                        <h3>公司成功中标江苏市重点项目材料供应</h3>
-                        <p>近日，我司成功中标江苏市某大型市政工程项目材料供应标段...</p>
-                        <a href="#">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                    <div class="form-group">
+                        <label for="phone">联系电话</label>
+                        <input type="tel" id="phone" name="phone" placeholder="请输入您的联系电话" required>
                     </div>
-                </div>
-                <div class="news-card">
-                    <div class="news-date">
-                        <span class="day">28</span>
-                        <span class="month">2024.05</span>
+                    <div class="form-group">
+                        <label for="message">留言内容</label>
+                        <textarea id="message" name="message" placeholder="请输入您的留言内容..." required></textarea>
                     </div>
-                    <div class="news-content">
-                        <h3>公司荣获"2024年度优秀供应商"称号</h3>
-                        <p>凭借优质的产品和专业的服务，我司荣获行业"优秀供应商"称号...</p>
-                        <a href="#">阅读更多 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <div class="news-date">
-                        <span class="day">10</span>
-                        <span class="month">2024.04</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>公司仓储中心扩建工程正式启动</h3>
-                        <p>为满足日益增长的业务需求，公司仓储中心扩建工程正式启动...</p>
-                        <a href="#">阅读更多 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+                    <button type="submit" class="submit-btn">提交留言</button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- 联系我们 CTA -->
-    <section class="cta-section">
-        <div class="container cta-content">
-            <h2>需要采购工程材料？</h2>
-            <p>立即联系我们，获取专业报价和采购建议</p>
-            <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-light">立即咨询</a>
-                <a href="tel:07508888888" class="btn btn-outline-light"><i class="fas fa-phone"></i> 15298311630</a>
+<!-- 页脚 -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>阔农农业科技</h3>
+                <p>阔农农业科技有限公司是一家专注于现代农业科技研发、农产品种植与销售的综合性企业。我们始终坚持绿色生态理念，致力于为消费者提供最优质的农产品和专业的农业技术服务。</p>
             </div>
-        </div>
-    </section>
-
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-col footer-about">
-                <div class="footer-logo">
-                    <i class="fas fa-building"></i>
-                    <span>阔农温室工程材料</span>
-                </div>
-                <p>江苏阔农温室工程材料有限公司是一家专业从事建筑材料、工程物资供应与配送的综合性企业，致力于为客户提供优质的产品和专业的服务。</p>
-                <div class="footer-social">
-                    <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
-                    <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
-                    <a href="#" aria-label="抖音"><i class="fab fa-tiktok"></i></a>
-                    <a href="#" aria-label="QQ"><i class="fab fa-qq"></i></a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>快速导航</h3>
+            <div class="footer-links">
+                <h4>快速导航</h4>
                 <ul>
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="about.html">关于我们</a></li>
-                    <li><a href="products.html">产品中心</a></li>
-                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#products">产品展示</a></li>
+                    <li><a href="#services">服务项目</a></li>
+                    <li><a href="#contact">联系我们</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h3>产品分类</h3>
+            <div class="footer-links">
+                <h4>产品分类</h4>
                 <ul>
-                    <li><a href="products.html">钢材类</a></li>
-                    <li><a href="products.html">水泥类</a></li>
-                    <li><a href="products.html">管材类</a></li>
-                    <li><a href="products.html">防水材料</a></li>
-                    <li><a href="products.html">装饰材料</a></li>
+                    <li><a href="#products">有机蔬菜</a></li>
+                    <li><a href="#products">优质水果</a></li>
+                    <li><a href="#products">五谷杂粮</a></li>
+                    <li><a href="#products">特色农产品</a></li>
                 </ul>
             </div>
-            <div class="footer-col footer-contact">
-                <h3>联系我们</h3>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> 江苏省宿迁市建设路88号</li>
-                    <li><i class="fas fa-phone"></i> 15298311630</li>
-                    <li><i class="fas fa-envelope"></i> info@gywsgc.com</li>
-                    <li><i class="fas fa-clock"></i> 周一至周六 8:00-18:00</li>
-                </ul>
+            <div class="footer-contact">
+                <h4>联系方式</h4>
+                <p>📞 电话：15298311630</p>
+                <p>📧 邮箱：kuonong@163.com</p>
+                <p>📍 地址：江苏省宿迁市</p>
+                <p>🕐 工作时间：8:00 - 18:00</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="container footer-bottom-inner">
-                <p>&copy; 2024 江苏阔农温室工程材料有限公司 版权所有</p>
-                <p><a href="#">粤ICP备XXXXXXXX号</a></p>
-            </div>
+            <p>&copy; 2026 阔农农业科技有限公司 版权所有 | 联系电话：15298311630</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- 返回顶部 -->
-    <button class="back-to-top" id="backToTop" aria-label="返回顶部">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+<!-- 回到顶部按钮 -->
+<button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
 
-    <script src="js/main.js"></script>
+<script>
+    // 页面加载动画
+    window.addEventListener('load', function() {
+        const loader = document.getElementById('pageLoader');
+        setTimeout(function() {
+            loader.classList.add('hidden');
+            setTimeout(function() {
+                loader.style.display = 'none';
+            }, 500);
+        }, 400);
+    });
+
+    // 导航栏滚动效果
+    const navbar = document.getElementById('navbar');
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+            backToTop.classList.add('visible');
+        } else {
+            navbar.classList.remove('scrolled');
+            backToTop.classList.remove('visible');
+        }
+    });
+
+    // 回到顶部
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 汉堡菜单
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('open');
+    });
+
+    // 点击导航链接后关闭移动端菜单
+    navMenu.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('open');
+        });
+    });
+
+    // 轮播图
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dots .dot');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentSlide = 0;
+    let autoPlayInterval;
+
+    function goToSlide(index) {
+        slides.forEach(function(slide, i) {
+            slide.classList.remove('active');
+            if (i === index) {
+                slide.classList.add('active');
+            }
+        });
+        dots.forEach(function(dot, i) {
+            dot.classList.remove('active');
+            if (i === index) {
+                dot.classList.add('active');
+            }
+        });
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        goToSlide((currentSlide + 1) % slides.length);
+    }
+
+    function prevSlide() {
+        goToSlide((currentSlide - 1 + slides.length) % slides.length);
+    }
+
+    prevBtn.addEventListener('click', function() {
+        prevSlide();
+        resetAutoPlay();
+    });
+
+    nextBtn.addEventListener('click', function() {
+        nextSlide();
+        resetAutoPlay();
+    });
+
+    dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+            goToSlide(parseInt(dot.getAttribute('data-index')));
+            resetAutoPlay();
+        });
+    });
+
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetAutoPlay() {
+        clearInterval(autoPlayInterval);
+        startAutoPlay();
+    }
+
+    // 触摸滑动支持
+    let touchStartX = 0;
+    const carousel = document.getElementById('heroCarousel');
+
+    carousel.addEventListener('touchstart', function(e) {
+        touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', function(e) {
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) {
+            if (diff > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+            resetAutoPlay();
+        }
+    }, { passive: true });
+
+    startAutoPlay();
+
+    // 数字统计动画
+    const statNumbers = document.querySelectorAll('.stat-number');
+    let statsAnimated = false;
+
+    function animateStats() {
+        if (statsAnimated) return;
+        const statsSection = document.getElementById('stats');
+        const rect = statsSection.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            statsAnimated = true;
+            statNumbers.forEach(function(el) {
+                const target = parseInt(el.getAttribute('data-count'));
+                const duration = 2000;
+                const startTime = performance.now();
+                const suffix = el.getAttribute('data-count') === '98' ? '%' : '+';
+
+                function updateCount(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.round(target * eased);
+                    if (target === 98) {
+                        el.textContent = current;
+                    } else {
+                        el.textContent = current + '+';
+                    }
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        if (target === 98) {
+                            el.textContent = target + '%';
+                        } else {
+                            el.textContent = target + '+';
+                        }
+                    }
+                }
+                requestAnimationFrame(updateCount);
+            });
+        }
+    }
+
+    window.addEventListener('scroll', animateStats);
+    animateStats(); // 初始检查
+
+    // 表单提交处理
+    function handleSubmit(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        // 在这里可以添加实际提交逻辑
+        alert('感谢您的留言！\n\n姓名：' + name + '\n电话：' + phone + '\n留言：' + message +
+            '\n\n我们会尽快与您联系，请保持电话畅通。\n联系电话：15298311630');
+        document.getElementById('contactForm').reset();
+    }
+
+    // 产品卡片点击效果
+    document.querySelectorAll('.product-card').forEach(function(card) {
+        card.addEventListener('click', function() {
+            const productName = card.querySelector('h4').textContent;
+            alert('您正在查看：' + productName + '\n\n如需购买或咨询，请拨打：15298311630');
+        });
+    });
+
+    // 平滑滚动到锚点
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href !== '#') {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 70;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+</script>
 </body>
 </html>
